@@ -24,14 +24,3 @@ describe('dataLovers.sortData', () => {
     expect(dataLovers.sortData(RICKANDMORTY, name)).toBe("sortedData");
   });
 });
-
-describe('dataLovers.computeStats', () => {
-  it('is a function', () => {
-    expect(typeof dataLovers.computeStats).toBe('function');
-  });
-  it('returns `stats`', () => {
-    expect(dataLovers.computeStats(RICKANDMORTY)).toBe("stats");
-  });
-});
-
-});
