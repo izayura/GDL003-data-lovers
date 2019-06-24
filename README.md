@@ -120,10 +120,18 @@ el problema (o problemas) que tiene tu usuario.
 
 ### Historias de usuario
 
-Una vez que entiendas las necesidades de tu usuario, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición
-de terminado (_definition of done_) para cada una.
+Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1nchez_(personaje))quiero una base de datos para monitorear a todo el universo, poder anticiparme a sus planes y conocer su ubicación exacta. Ello me ayudará a planear mis actividades minimizando los riesgos y con resultados óptimos.
+
+Definition of done:
+1. Inicio de sesión, pensado para que sólo nuestro único usuario pueda acceder.
+2. Seleccionar los filtros para la búsqueda, para estadísticas o por palabra
+..* Mostrar la información filtrada alfabéticamente, donde se puede elegir entre orden ascendente o descendente.
+..* Mostrar las estadísticas para el filtro seleccionado.
+..* En caso de no encontrarse resultados para la búsqueda mostrar una leyenda que así lo especifique.
+3. 3 opciones anteriores tienen la opción de regresar para hacer otra búsqueda.
+4. Todo el código estará enmarcado en un diseño responsivo pensando en que pueda ser usado en diferentes dispositivos manteniendo el orden y el diseño inicial.
+5. Al finalizar el proyecto podrán ejecutarse satisfactoriamente los tests de usabilidad y funcionalidad. 
+
 
 ### Diseño de la Interfaz de Usuario
 

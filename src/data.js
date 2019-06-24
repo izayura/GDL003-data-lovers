@@ -5,4 +5,16 @@ const example = () => {
   return 'example';
 };
 
-window.example = example;
+const filtrado = () => {
+  return 'filtrado';
+};
+
+const mostrar = () => {
+  return 'mostrar';
+};
+
+window.example = {
+  example, 
+  filtrado, 
+  mostrar
+};
