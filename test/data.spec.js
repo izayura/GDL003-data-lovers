@@ -1,31 +1,37 @@
 require('../src/data.js');
+const RICKANDMORTY= require('../src/data/rickandmorty/rickandmorty.js');
 
+describe('dataLovers', () => {
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example.example).toBe('function');
+  it('is a object', () => {
+    expect(typeof dataLovers).toBe('object');
   });
 
-  it('returns `example`', () => {
-    expect(example.example()).toBe('example');
+describe('dataLovers.filterData', () =>{
+  it('is a function', () => {
+    expect(typeof dataLovers.filterData).toBe('function');
+  });
+  it('returns `filteredData`', () => {
+    expect(dataLovers.filterData(RICKANDMORTY, "male")).toBe("filteredData");
   });
 });
 
-
-describe('filtrado', () =>{
+describe('dataLovers.sortData', () => {
   it('is a function', () => {
-    expect(typeof example.filtrado).toBe('function');
+    expect(typeof dataLovers.sortData).toBe('function');
   });
-  it('returns `filtrado`', () => {
-    expect(example.filtrado()).toBe('filtrado');
+  it('returns `sortedData`', () => {
+    expect(dataLovers.sortData(RICKANDMORTY, name)).toBe("sortedData");
   });
 });
 
-describe('mostrar', () => {
+describe('dataLovers.computeStats', () => {
   it('is a function', () => {
-    expect(typeof example.mostrar).toBe('function');
+    expect(typeof dataLovers.computeStats).toBe('function');
   });
-  it('returns `mostrar`', () => {
-    expect(example.mostrar()).toBe('mostrar');
+  it('returns `stats`', () => {
+    expect(dataLovers.computeStats(RICKANDMORTY)).toBe("stats");
   });
+});
+
 });
