@@ -35,32 +35,12 @@ y la interfaz construida [aquí](https://app.talento.laboratoria.la/profile/HFOo
 
 ## Resumen del proyecto
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
+En este proyecto construimos una _página web_ para visualizar un
+_conjunto (set) de datos que se adecúe a lo que nuestro usuario definido
 necesita.
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
+A continuación se ecuentra la fuente de nuestros datos, que provienen de la serie Rick and Morty:
 
-Una vez que definas tu área de interés, entiende quién es tu usuario y qué
-necesita saber o ver exactamente; luego podrás construir la interfaz que le
-ayude a interactuar y entender mejor esos datos.
-
-Estos son datos que te proponemos:
-
-
-- [Pokémon](src/data/pokemon/pokemon.json):
-  En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
-  junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](pokemongolive.com).
-- [Steam noticias](src/data/steam/steam.json):
-  Lista noticias relacionadas a los videojuegos presentes en la
-  plataforma de [Steam](https://store.steampowered.com/).
-- [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de jugadores en una liga del
-  juego League of Legends (LoL), puedes revisar la documentación de su API en
-  este [link](https://developer.riotgames.com/api-methods/).
 - [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
   Este set nos proporciona la lista de los personajes de la serie Rick and
   Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com). 
@@ -77,9 +57,11 @@ podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
 
 ## Consideraciones generales
 
-- Este proyecto se debe resolver en duplas.
 - El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
   interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
+
+
+- Este proyecto se desarrolló en una dupla formada por Gloria Ramírez Robles y Tegthyn Coral Quiñones Gutiérrez como el segundo proyecto del bootcamp de Laboratoria, el cual se titula _Data Lovers_.
 - Tiempo para completarlo: 3 semana divididas en 3 sprints (una entrega del producto funcional al término de cada sprint).
 
 ## Objetivos de aprendizaje
@@ -114,13 +96,18 @@ Los criterios para considerar que has completado este proyecto son:
 
 ### Definición del producto
 
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
+Este ejercicio de Web app está diseñado para que el usuario Rick Sánchez tenga acceso a la información básica de todos los seres del multiverso en que se desarrolla la serie.
+
+La presente Web app provee esta información ordenada en base a los filtros seleccionados a partir de la cual se muestran los datos ordenados en dos formas; en una estadística y en tarjetas de identificación, las cuales a su vez pueden ser seleccionadas individualmente y se ordenan alfabéticamente.
+
+En conclusión, este proyecto cubre la función de monitoreo de los personajes, su localización, estatus, etc. para que Rick pueda continuar con sus investigaciones evadiendo la justicia y a quienes lo persiguen, considerando esta información. 
+
+Los criterios de diseño están basados en la estética visual propia de la serie, para favorecer el hecho de que pueda verse como si fuera una Web app que usa Rick dentro de la serie para agendar sus planes, a manera de metahistoria. De forma general tratamos de apegarnos a los colores saturados, elementos delineados en negro y un  poco de volumen a algunos objetos como botones.
 
 ### Historias de usuario
 
 Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1nchez_(personaje)) quiero una base de datos para monitorear a todo el universo, poder anticiparme a sus planes y conocer su ubicación exacta. Ello me ayudará a planear mis actividades minimizando los riesgos y con resultados óptimos.
+
 ![alt text](https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/05/10/Recortada/img_psola_20170929-140352_imagenes_lv_terceros_rick-and-morty-season-3-episode-1-review-the-rickshank-redemption-kQJG-U443479379590EYD-992x558@LaVanguardia-Web.jpg)
 
 Definition of done:
@@ -129,7 +116,7 @@ Definition of done:
  * Mostrar la información filtrada alfabéticamente, donde se puede elegir entre orden ascendente o descendente.
  * Mostrar las estadísticas para el filtro seleccionado.
  * En caso de no encontrarse resultados para la búsqueda mostrar una leyenda que así lo especifique.
-3. 3 opciones anteriores tienen la opción de regresar para hacer otra búsqueda.
+3. Las 3 opciones anteriores tienen la opción de regresar para hacer otra búsqueda.
 4. Todo el código estará enmarcado en un diseño responsivo pensando en que pueda ser usado en diferentes dispositivos manteniendo el orden y el diseño inicial.
 5. Al finalizar el proyecto podrán ejecutarse satisfactoriamente los tests de usabilidad y funcionalidad. 
 
