@@ -1,6 +1,4 @@
-@media(orientation:landscape){
-  
-
+@media(orientation:landscape){ 
 }
 
 body {
@@ -9,4 +7,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat; 
     width: 100%;
-}
+    }
+    .loginPage{ 
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        background-color:#009cde; 
+    }
