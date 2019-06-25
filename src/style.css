@@ -1,0 +1,8 @@
+@media(orientation:landscape){
+    <!--estilos de CSS-->
+  
+    body {
+        background-image: url("https://i.ibb.co/r4C9SKW/estrellasconaparato.jpg");
+        background-repeat: no-repeat, repeat;
+    }
+}
