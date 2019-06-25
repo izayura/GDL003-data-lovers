@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" />
     <style>
         body {
+
               background-image: url("https://i.ibb.co/ZWn9PRZ/estrellasconaparato.jpg");
               -webkit-background-size: cover;
              -moz-background-size: cover;
@@ -16,19 +17,81 @@
             background-size: cover;
             background-repeat: no-repeat; 
             width: 100%;
-        } 
-         
+        }
         </style>
-        
+
   </head>
   <body>
-      
-    <h>holi</h>
+
+    <div class="page" id="login">
+      <form>
+        <input class="loginPage" type="text" id="user" placeholder="USER">
+        <input class="loginPage" type="password" id="password" placeholder="PASSWORD">
+        <!--insertar gif de lector de retina-->
+        <input class="loginPage" type="submit" id="send" value="ENTER">
+      </form>
+    </div>
+    <div class="page" id="applyFilters">
+      <input class="seachByWord" id="seachByWord" placeholder="SEARCH BY WORD">
+      <select id="status">
+        <option selected value="0">Status</option>
+        <option value="1">Alive</option>
+        <option value="2">Dead</option>
+        <option value="3">Unknown</option>
+      </select>
+      <select id="gender">
+        <option selected value="0">Gender</option>
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+        <option value="3">Unknown</option>
+      </select>
+      <select id="origin">
+        <option selected value="0">Origin</option>
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+        <option value="3">Unknown</option>
+      </select>
+      <select id="location">
+        <option selected value="0">Location</option>
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+        <option value="3">Unknown</option>
+      </select>
+      <input type="button" class="search" id="goStats" value="STATS">
+      <input type="button" class="search" id="goIds" value="SHOW ID'S">
+    </div>
+    <div class="page" id="showStats">
+      <input type="button" class="return" id="returnPage" value="RETURN TO FILTERS">
+    </div>
+    <div class="page" id="idPage">
+      <section class="idCard">
+      </section>
+      <section class="idCard">
+      </section>
+      <section class="idCard">
+      </section>
+      <section class="idCard">
+      </section>
+      <section class="idCard">
+      </section>
+      <section class="idCard">
+      </section>
+      <input type="button" class="return" id="returnPage" value="RETURN TO FILTERS">
+    </div>
+    <div class="page" id="idSelected">
+      <section class="idCard" id="idCardSelected">
+      </section>
+      <input type="button" class="return" id="returnPageFilter" value="RETURN TO IDS">
+    </div>
+    <div class="page" id="error">
+      <input type="button" class="return" id="returnPage" value="RETURN TO FILTERS">
+    </div>
+
     <div id="root"></div>
     <script src="data.js"></script>
     <script src="main.js"></script>
     <script src="./data/rickandmorty/rickandmorty.js"></script>
   <!--  <script src="./data/rickandmorty/rickandmorty.json"></script>-->
- 
+
   </body>
 </html>
