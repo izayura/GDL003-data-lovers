@@ -1,16 +1,5 @@
-/*const filtrado = () => {
-  return 'filtrado';
-};
+const RICKANDMORTY= require('../src/data/rickandmorty/rickandmorty.js');
 
-const mostrar = () => {
-  return 'mostrar';
-};
-
-window.example = {
-  example,
-  filtrado,
-  mostrar
-};*/
 
 window.dataLovers = {
   filterData:(/*data,condition*/)=>{

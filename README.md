@@ -129,14 +129,16 @@ Siguiendo la temática de la serie y los inventos de Rick Sanchez, el diseño de
 
 En un inicio creamos un boceto del prototipo en un post it, con detalles que considerabamos vitales al estar trabajando con el Definition of done y que debiamos tomar en cuenta al hacer el prototipo en papel
 ![](https://i.ibb.co/phQqMkw/IMG-20190624-185118.jpg)
-Al momento de realizar el prototipo en lapiz y papel con mayor conciencia de las páginas que necesitabamos, nos basamos en lo anteriormente creado en el post it y en el feedback recibido para incluirlo en el prototipo.
+
+Al momento de realizar el prototipo en lapiz y papel con mayor conciencia de las páginas que necesitabamos, nos basamos en lo anteriormente creado en el post it y en el feedback recibido  por nuestras compañeras para incluirlo en el prototipo.
 ![](https://i.ibb.co/XXJwBKX/IMG-20190624-145442.jpg)
 ![](https://i.ibb.co/yyX0R0F/IMG-20190624-145500.jpg)
+
 Estos son los dibujos en los que basamos el diseño que teniamos pensado para la interfaz de la web app, simulando desde un principio el aparato donde se manejarán los datos.
 
 #### Prototipo de alta fidelidad
 
-Teniendo ya claro el estilo y las páginas que queriamos utilizar en nuestra web app, buscamos una imagen que se adaptará al aparato que buscamos simular, y con ayuda de editores de gráficos(gimp y photoshop) la limpiamos de detalles externos(fondo, manos, borrar lo que ya aparecía en la pantalla del mismo), y agregando el diseño que buscabamos tuviera en nuestro proyecto. A su vez utilizamos Marvel para agregar algunos botones con el mismo estilo ya utilizado y creamos un prototipo de alta fidelidad con botones funcionales para recorrer la interfaz de la web app.
+Teniendo ya claro el estilo y las páginas que queriamos utilizar en nuestra web app, buscamos una imagen que se adaptará al aparato que buscamos simular, y con ayuda de editores de gráficos(gimp y photoshop) la limpiamos de detalles externos(fondo, manos, borrar lo que ya aparecía en la pantalla del mismo), y agregamos el diseño que buscabamos tuviera en nuestro proyecto. A su vez utilizamos Marvel para agregar algunos botones con el mismo estilo ya utilizado y creamos un prototipo de alta fidelidad con botones funcionales para recorrer la interfaz de la web app.
 
 ## https://marvelapp.com/541bc74
 
