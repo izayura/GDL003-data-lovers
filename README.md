@@ -43,7 +43,7 @@ A continuación se ecuentra la fuente de nuestros datos, que provienen de la ser
 
 - [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
   Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com). 
+  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com).
 
 
 Como entregable final tendrás una página web que permita **visualizar la data,
@@ -100,7 +100,7 @@ Este ejercicio de Web app está diseñado para que el usuario Rick Sánchez teng
 
 La presente Web app provee esta información ordenada en base a los filtros seleccionados a partir de la cual se muestran los datos ordenados en dos formas; en una estadística y en tarjetas de identificación, las cuales a su vez pueden ser seleccionadas individualmente y se ordenan alfabéticamente.
 
-En conclusión, este proyecto cubre la función de monitoreo de los personajes, su localización, estatus, etc. para que Rick pueda continuar con sus investigaciones evadiendo la justicia y a quienes lo persiguen, considerando esta información. 
+En conclusión, este proyecto cubre la función de monitoreo de los personajes, su localización, estatus, etc. para que Rick pueda continuar con sus investigaciones evadiendo la justicia y a quienes lo persiguen, considerando esta información.
 
 Los criterios de diseño están basados en la estética visual propia de la serie, para favorecer el hecho de que pueda verse como si fuera una Web app que usa Rick dentro de la serie para agendar sus planes, a manera de metahistoria. De forma general tratamos de apegarnos a los colores saturados, elementos delineados en negro y un  poco de volumen a algunos objetos como botones.
 
@@ -118,19 +118,29 @@ Definition of done:
  * En caso de no encontrarse resultados para la búsqueda mostrar una leyenda que así lo especifique.
 3. Las 3 opciones anteriores tienen la opción de regresar para hacer otra búsqueda.
 4. Todo el código estará enmarcado en un diseño responsivo pensando en que pueda ser usado en diferentes dispositivos manteniendo el orden y el diseño inicial.
-5. Al finalizar el proyecto podrán ejecutarse satisfactoriamente los tests de usabilidad y funcionalidad. 
+5. Al finalizar el proyecto podrán ejecutarse satisfactoriamente los tests de usabilidad y funcionalidad.
 
 
 ### Diseño de la Interfaz de Usuario
 
+Siguiendo la temática de la serie y los inventos de Rick Sanchez, el diseño de la web app se pensó para ser mostrado como si fuera un aparato utilizado por Rick. Se busca simular la interfaz con la que funcionaría dentro del universo de la serie un aparato con objetivos similares a nuestra historia de usuario, utilizando los colores saturados y delineados en negro ya caracteristicos.
+
 #### Prototipo de baja fidelidad
 
-Durante tu trabajo deberás haber hecho e iterado sketches (boceto) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que realices y las subas a tu repositorio, y las menciones en tu
-`README.md`.
+En un inicio creamos un boceto del prototipo en un post it, con detalles que considerabamos vitales al estar trabajando con el Definition of done y que debiamos tomar en cuenta al hacer el prototipo en papel
+![](https://i.ibb.co/phQqMkw/IMG-20190624-185118.jpg)
+Al momento de realizar el prototipo en lapiz y papel con mayor conciencia de las páginas que necesitabamos, nos basamos en lo anteriormente creado en el post it y en el feedback recibido para incluirlo en el prototipo.
+![](https://i.ibb.co/XXJwBKX/IMG-20190624-145442.jpg)
+![](https://i.ibb.co/yyX0R0F/IMG-20190624-145500.jpg)
+Estos son los dibujos en los que basamos el diseño que teniamos pensado para la interfaz de la web app, simulando desde un principio el aparato donde se manejarán los datos.
 
 #### Prototipo de alta fidelidad
+
+Teniendo ya claro el estilo y las páginas que queriamos utilizar en nuestra web app, buscamos una imagen que se adaptará al aparato que buscamos simular, y con ayuda de editores de gráficos(gimp y photoshop) la limpiamos de detalles externos(fondo, manos, borrar lo que ya aparecía en la pantalla del mismo), y agregando el diseño que buscabamos tuviera en nuestro proyecto. A su vez utilizamos Marvel para agregar algunos botones con el mismo estilo ya utilizado y creamos un prototipo de alta fidelidad con botones funcionales para recorrer la interfaz de la web app.
+
+## https://marvelapp.com/541bc74
+
+El principal reto con lo esperado en base al diseño de nuestro prototipo de alta fidelidad será poder diseñar la web app dentro de la pantalla del aparato, con todos sus formularios y botones funcionales dentro de un diseño responsivo. En caso de estar limitadas con el tiempo nos enfocaremos en recrear solo la pantalla del aparato para mas adelante en el sprint 3 de iteración buscar lograr el resultado esperado con el diseño de la pantalla y que funcione de manera responsiva.
 
 Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
 _User Interface_). Para eso debes aprender a utilizar alguna herramienta de

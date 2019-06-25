@@ -1,4 +1,4 @@
-const filtrado = () => {
+/*const filtrado = () => {
   return 'filtrado';
 };
 
@@ -7,11 +7,11 @@ const mostrar = () => {
 };
 
 window.example = {
-  example, 
-  filtrado, 
+  example,
+  filtrado,
   mostrar
-};
-=======
+};*/
+
 window.dataLovers = {
   filterData:(/*data,condition*/)=>{
     return "filteredData";
