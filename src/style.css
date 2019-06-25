@@ -1,7 +1,18 @@
+body {
+
+    background-image: url("https://i.ibb.co/ZWn9PRZ/estrellasconaparato.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 100%;
+    }
 @media(orientation:landscape){
 }
 .page{
   display: none;
   border-style: solid;
   border-color: red;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;  
 }
+
