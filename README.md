@@ -39,7 +39,7 @@ En este proyecto construimos una _página web_ para visualizar un
 _conjunto (set) de datos que se adecúe a lo que nuestro usuario definido
 necesita.
 
-A continuación se ecuentra la fuente de nuestros datos, que provienen de la serie Rick and Morty:
+A continuación se encuentra la fuente de nuestros datos, que provienen de la serie Rick and Morty:
 
 - [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
   Este set nos proporciona la lista de los personajes de la serie Rick and
@@ -57,8 +57,8 @@ podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
 
 ## Consideraciones generales
 
-- El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
+- El proyecto ha sido entregado subiendo el código a GitHub (commit/push) y la
+  interfaz se despliega usando [GitHub Pages](https://pages.github.com/).
 
 
 - Este proyecto se desarrolló en una dupla formada por Gloria Ramírez Robles y Tegthyn Coral Quiñones Gutiérrez como el segundo proyecto del bootcamp de Laboratoria, el cual se titula _Data Lovers_.
@@ -66,19 +66,19 @@ podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
 
 ## Objetivos de aprendizaje
 
-El objetivo principal de este proyecto es que aprendas a diseñar y construir una
+El objetivo principal de este proyecto es aprender a diseñar y construir una
 interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
 usuario necesita.
 
-Dicho en palabras sencillas, aprenderás a:
+De manera puntual a continuación se presenta cada uno de los temas aprendidos en este ejercicio:
 
 - Aplicar y profundizar todo lo que aprendiste en el proyecto anterior.
 - Pensar en las **necesidades de los usuarios** para crear historias de usuario.
 - Escribir y trabajar con **historias de usuario**, sus definiciones de
-  terminado (_definition of done_) en la organización y planificación de tu
+  terminado (_definition of done_) en la organización y planificación de nuestro
   trabajo.
-- Definir qué data y de qué forma mostrarla en el producto, basándote en
-  tu **entendimiento del usuario**.
+- Definir qué data y de qué forma mostrarla en el producto, basándose en
+  nuestro **entendimiento del usuario**.
 - Crear productos que sigan los **principios básicos de diseño visual** y
   las **heurísticas de usabilidad**.
 - Iterar el diseño del producto, basándote en los resultados de los
