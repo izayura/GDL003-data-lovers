@@ -8,9 +8,8 @@ body {
     background-repeat: no-repeat; 
     width: 100%;
     }
-    .loginPage{ 
+    .page{ 
         justify-items: center;
         align-items: center;
-        justify-content: center;
-        background-color:#009cde; 
+        justify-content: center;       
     }
