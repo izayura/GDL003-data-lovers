@@ -1,5 +1,18 @@
 document.getElementById("login").style.display="block";
 
+let data=RICKANDMORTY;
+let condition=document.getElementById("status").value;
+
+/*for (let i=<0)
+
+
+var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]*/
+
 let enterButton=document.getElementById("send");
 enterButton.addEventListener("click", ()=>{
   document.getElementById("login").style.display="none";
@@ -16,6 +29,9 @@ let showId=document.getElementById("goIds");
 showId.addEventListener("click", ()=>{
   document.getElementById("applyFilters").style.display="none";
   document.getElementById("idPage").style.display="block";
+  /*let condition=document.getElementById("status").value;
+  let filtered=window.dataLovers.filterData(data, codition);
+  document.getElementById("idPage").innerHTML=filtered;*/
 });
 
 let returnFilters=document.getElementById("returnId");
