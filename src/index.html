@@ -15,9 +15,9 @@
         <br>
         <input class="loginPage" type="password" id="password" placeholder="PASSWORD" HSPACE="10" VSPACE="10">
           <br>
-        <img class="loginPage" src="https://www.fingertec.com/biometric_data_security/images/security_bnr_fp.gif"  width="150" height="130" HSPACE="10" VSPACE="10"/> 
+        <img class="loginPage" src="https://www.fingertec.com/biometric_data_security/images/security_bnr_fp.gif"  width="150" height="130" HSPACE="10" VSPACE="10"/>
         <br>
-        <input class="loginPage" type="submit" id="send" value="ENTER">
+        <input id="send" type="button" value="ENTER">
 
       </form>
     </div>
@@ -47,11 +47,11 @@
         <option value="2">Female</option>
         <option value="3">Unknown</option>
       </select>
-      <input type="button" class="search" id="goStats" value="STATS">
-      <input type="button" class="search" id="goIds" value="SHOW ID'S">
+      <button class="search" id="goStats">STATS</button>
+      <button class="search" id="goIds">SHOW ID'S</button>
     </div>
     <div class="page" id="showStats">
-      <input type="button" class="return" id="returnFromStats" value="RETURN TO FILTERS">
+      <button class="return" id="returnFromStats">RETURN TO FILTERS</button>
     </div>
     <div class="page" id="idPage">
       <section class="idCard" id="card1">
@@ -66,21 +66,22 @@
       </section>
       <section class="idCard">
       </section>
-      <input type="button" class="return" id="returnFromId" value="RETURN TO FILTERS">
+      <button id="returnFromId">RETURN TO FILTERS</button>
     </div>
     <div class="page" id="idSelected">
       <section class="idCard" id="idCardSelected">
       </section>
-      <input type="button" class="returnId" id="returnId" value="RETURN TO IDS">
+      <button class="returnId" id="returnId">RETURN TO IDS</button>
     </div>
     <div class="page" id="error">
-      <input type="button" class="return" id="returnFromError" value="RETURN TO FILTERS">
+      <button class="return" id="returnFromError">RETURN TO FILTERS</button>
     </div>
 
     <div id="root"></div>
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
-    <script src="./data/rickandmorty/rickandmorty.js"></script>
+
   <!--  <script src="./data/rickandmorty/rickandmorty.json"></script>-->
 
   </body>

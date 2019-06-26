@@ -1,16 +1,15 @@
 window.dataLovers = {
-  filterData:(data,condition)=>{
+    filterData:(RICKANDMORTY, condition)=>{
+
     let filteredData="";
-    for (let i=0; i < data.length; i++){
-      let rickmorty= data[i].results;
+    for (let i=0; i < RICKANDMORTY.length; i++){
+      let rickmorty= RICKANDMORTY[i].results;
       for (let k=0; k < rickmorty.length; k++)
-      let resultRickMorty= rickmorty[k].status;
-      for (let m=0; m < resultRickMorty.length; m++)
-      if(resultRickMorty[m]===condition){
-        console.log(rickmorty[k].name);
-      }
+        if(rickmorty[k].status === condition.value){
+          filteredData+=rickmorty[k].name;
+        }
     }
-    return "filteredData";
+    return filteredData;
 },
   sortData:(/*data, sortBy, sortOrder*/)=>{
     return "sortedData";

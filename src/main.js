@@ -1,20 +1,11 @@
 document.getElementById("login").style.display="block";
+//const RICKANDMORTY=require("./data/rickandmorty/rickandmorty.js");
+let condition=document.getElementById("status");
 
-let data=RICKANDMORTY;
-let condition=document.getElementById("status").value;
-
-/*for (let i=<0)
-
-
-var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-
-const result = words.filter(word => word.length > 6);
-
-console.log(result);
-// expected output: Array ["exuberant", "destruction", "present"]*/
 
 let enterButton=document.getElementById("send");
 enterButton.addEventListener("click", ()=>{
+  console.log("enter");
   document.getElementById("login").style.display="none";
   document.getElementById("applyFilters").style.display="block";
 });
@@ -29,9 +20,9 @@ let showId=document.getElementById("goIds");
 showId.addEventListener("click", ()=>{
   document.getElementById("applyFilters").style.display="none";
   document.getElementById("idPage").style.display="block";
-  /*let condition=document.getElementById("status").value;
-  let filtered=window.dataLovers.filterData(data, codition);
-  document.getElementById("idPage").innerHTML=filtered;*/
+  let filtered=window.dataLovers.filterData(RICKANDMORTY, condition);
+  document.getElementById("idPage").innerHTML=filtered;
+  console.log(filtered);
 });
 
 let returnFilters=document.getElementById("returnId");
