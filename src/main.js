@@ -22,7 +22,7 @@ showId.addEventListener("click", ()=>{
   document.getElementById("idPage").style.display="block";
   let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value);
   document.getElementById("idPage").innerHTML= filtered;
-  console.log(filtered);
+  console.log(filtered[5]);
 });
 
 let returnFilters=document.getElementById("returnId");

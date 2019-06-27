@@ -12,6 +12,8 @@ window.dataLovers = {
 
       return myJSON;
 
+/* PARA FILTRAR CON EL BUSCADOR POR PALABRA?????
+obj[key].includes(seachByWord.value)
     /* EXPERIMENTOS PARA QUE ARROJE LOS DATOS SEPARADOS
       let filtering= RICKANDMORTY.filter((idStatus)=>{
         return idStatus.status === condition
