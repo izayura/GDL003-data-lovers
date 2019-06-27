@@ -1,5 +1,5 @@
 document.getElementById("login").style.display="block";
-//const RICKANDMORTY=require("./data/rickandmorty/rickandmorty.js");
+
 let condition=document.getElementById("status");
 
 
@@ -24,6 +24,7 @@ showId.addEventListener("click", ()=>{
   document.getElementById("idPage").innerHTML= filtered;
   console.log(filtered);
 });
+
 
 let returnFilters=document.getElementById("returnId");
 returnFilters.addEventListener("click", ()=>{

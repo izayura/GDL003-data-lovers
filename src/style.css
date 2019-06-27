@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    text-align: center
     }
 @media(orientation:landscape){
 }
@@ -11,7 +12,21 @@ body {
   display: none;
   border-style: solid;
   border-color: red;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
+  margin-top: 17%
 }
+.loginPage{
+  margin: 2%;
+  background-color: black;
+  text-align: center;
+  text-decoration-color: aliceblue;
+  font-weight: bold;
+  font-family: 'Tahoma';
+}
+
+/*.centrar un elemento {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}*/
