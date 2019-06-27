@@ -20,8 +20,8 @@ let showId=document.getElementById("goIds");
 showId.addEventListener("click", ()=>{
   document.getElementById("applyFilters").style.display="none";
   document.getElementById("idPage").style.display="block";
-  let filtered=window.dataLovers.filterData(RICKANDMORTY, condition);
-  document.getElementById("idPage").innerHTML=filtered;
+  let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value);
+  document.getElementById("idPage").innerHTML= filtered;
   console.log(filtered);
 });
 

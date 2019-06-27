@@ -1,16 +1,18 @@
 window.dataLovers = {
-    filterData:(RICKANDMORTY, condition)=>{
+  //obtiene la información del archivo rickanmorty.js
+    filterData:(RICKANDMORTY, condition)=>
+  {
+     //aplicar el filtro a la información
+      let impresion = RICKANDMORTY.filter((personaje) => 
+      {
+        //sustitución
+        return personaje.status === condition
+      })//transformar el objeto en string en pantalla
+        let myJSON = JSON.stringify(impresion);
 
-    let filteredData="";
-    for (let i=0; i < RICKANDMORTY.length; i++){
-      let rickmorty= RICKANDMORTY[i].results;
-      for (let k=0; k < rickmorty.length; k++)
-        if(rickmorty[k].status === condition.value){
-          filteredData+=rickmorty[k].name;
-        }
-    }
-    return filteredData;
+      return myJSON;
 },
+
   sortData:(/*data, sortBy, sortOrder*/)=>{
     return "sortedData";
 },
