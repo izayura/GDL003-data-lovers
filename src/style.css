@@ -4,21 +4,16 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;*/
+      text-align: center;
     }
 @media(orientation:landscape){
 }
-.page{
-
-  display: none;
-  border-style: solid;
-  border-color: red;
-  justify-items: center;
+.page {
   align-items: center;
+  border-color: blue;
+  border-style: dotted;
+  display: none;
   justify-content: center;
-}
-input{
-  text-align: center;
-}
-button{
-text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
