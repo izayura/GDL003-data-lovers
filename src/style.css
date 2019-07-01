@@ -2,10 +2,6 @@
 }
 body {
     background-image: url("https://i.ibb.co/BVc8GL5/lineas-2.jpg");
-<<<<<<< HEAD
-=======
-   
->>>>>>> 7c94bbfbcb14855f4e7f706593f1d0d3af49b11c
     background-size: cover;
     width: 100%;
     text-align: center;
@@ -34,48 +30,22 @@ body {
     moz-box-shadow: 0px 6px 0 rgb(102, 104, 98);
     -webkit-box-shadow: 0px 6px 0 rgb(102, 104, 98);
 }
-.idCard{
-  height: 7%;
-  background-color: aliceblue;
-  border-color: black;
-  margin: 1.7%;
-  border-style: solid;
-  font-weight: bold;
-  font-family: 'Tahoma';
-}
-.idCard1{
 
-  height: 7%;
-  weight:5.5%;
-  background-color: aliceblue;
-  border-color: black;
-  margin: 1.7%;
-  border-style: solid;
-  font-weight: bold;
-  font-family: 'Tahoma';
-}
-
-.wrapper {
-  overflow:hidden;
-  width:320px;
-}
-.wrapper div {
-  /* cualquier altura mayor que el total de sumar la anchura de las img */
-  width:330px;
-
-  /* para evitar el margen superior de la primera fila */
-  margin-top:-10px;
-}
 IMG {
   width:100px;
   height:75px;
-  float:left;
-  margin:10px 10px 0 0;
+  margin:10px 10px 10px 10px;
 }
-/*.centrar un elemento {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}*/
+
+.cardsFiltered{
+  width:200px;
+  height: 350px;
+  float:right;
+  background-color: aliceblue;
+  border-color: black;
+  margin: 1.7%;
+  border-style: solid;
+  font-weight: bold;
+  font-family: 'Tahoma';
+
+}

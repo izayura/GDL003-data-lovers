@@ -22,8 +22,11 @@ obj[key].includes(seachByWord.value)
       return objectText*/
 },
 
-  sortData:(/*data, sortBy, sortOrder*/)=>{
-    return "sortedData";
+  sortData:(RICKANDMORTY, sortBy, sortOrder)=>{
+
+      RICKANDMORTY.sort(function(a, b){return b-a});
+ document.getElementById("idPage").innerHTML = RICKANDMORTY;
+  //  return "sortedData";
 },
  computeStats:(/*data*/)=>{
    return "stats";

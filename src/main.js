@@ -1,7 +1,7 @@
 document.getElementById("login").style.display="block";
 
 let condition=document.getElementById("status");
-
+const impress=document.getElementById("card1");
 
 let enterButton=document.getElementById("send");
 enterButton.addEventListener("click", ()=>{
@@ -23,36 +23,16 @@ showId.addEventListener("click", ()=>{
   let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value);
   //convierte la variable filter de string a objeto JSON
   filtered=JSON.parse(filtered)
-
-//bucle para obtener los items seleccionados de cada personaje en el filtro
-for (let index = 0; index < filtered.length; index++) {
-  //almacena los resultados de los objetos JSON en una variable
-  let x1 = filtered[index].name;
-  let x2 = filtered[index].id;
-  let x3 = filtered[index].origin.name;
-  let x4 = filtered[index].status;
-  let x5 = filtered[index].species;
-  let x6 = filtered[index].image;
-
-  //convierte los datos de cada personaje requeridos en strings
-  let response =
-
-  "<div class='idcard1' >"+
-  "<IMG SRC="+String(x6)+ "><br>" +
-  "name: "+String(x1) + "<br>" +
-  "id: "+String(x2) + "<br>" +
-  "origin: "+String(x3) + "<br>" +
-  "status: "+String(x4) + "<br>" +
-  "species: "+String(x5)+"</div>";
-
-  //imprime los datos en el HTML, transformándolos de string en HTML
-  document.getElementById("card1").innerHTML+= response
-  
-
-}
-  
- 
-
+  let response = filtered.forEach(cards=>{
+impress.innerHTML+=
+    `<div class="cardsFiltered" id= "">
+      <img src="${cards.image}" alt="">
+      <h2>Name: ${cards.name}</h2>
+      <p>Gender: ${cards.gender}</p>
+      <p>Status: ${cards.status}</p>
+      <p>Location: ${cards.location.name}</p>
+    </div>`
+  });
 });
 
 
@@ -77,3 +57,11 @@ returnId.addEventListener("click", returnButton);
 
 let returnError=document.getElementById("returnFromError");
 returnError.addEventListener("click", returnButton);
+
+let buttonSort= document.getElementById("sortName");
+buttonSort.addEventListener("click", ()=>{
+    let sorted= window.dataLovers.sortData(RICKANDMORTY.results, sortBy, sortOrder);
+    sorted=JSON.parse(sorted);
+    document.getElementById("idPage").innerHTML=sorted;
+    //convierte la variable filter de string a objeto JSON
+})
