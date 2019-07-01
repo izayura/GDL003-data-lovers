@@ -11,7 +11,7 @@
 
       <div class="page" id="login">
           <form>
-    
+
             <input class="loginPage" type="text" id="user" placeholder="USER" HSPACE="10" VSPACE="10">
             <br>
             <input class="loginPage" type="password" id="password" placeholder="PASSWORD" HSPACE="10" VSPACE="10">
@@ -23,7 +23,7 @@
         </div>
     <div class="page" id="applyFilters">
       <br>
-      <input class="seachByWord" id="seachByWord" placeholder="SEARCH BY WORD">
+      <input class="seachbar" id="seachByWord" placeholder="SEARCH BY WORD">
       <br>
       <select class="option" id="status">
         <option selected value="0">Status</option>
@@ -33,16 +33,9 @@
       <br>
       <select class="option" id="gender">
         <option selected value="0">Gender</option>
-        <option value="1">Male</option>
-        <option value="2">Female</option>
-        <option value="3">Unknown</option>
-      </select>
-      <br>
-      <select class="option" id="origin">
-        <option selected value="0">Origin</option>
-        <option value="1">Male</option>
-        <option value="2">Female</option>
-        <option value="3">Unknown</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Unknown">Unknown</option>
       </select>
       <br>
       <select class="option" id="location">
@@ -55,15 +48,17 @@
       <button class="search" id="goStats">STATS</button>
       <br>
       <button class="search" id="goIds">SHOW ID'S</button>
-
-    </div>
+    <br>
+  </div>
     <div class="page" id="showStats">
       <button class="return" id="returnFromStats">RETURN TO FILTERS</button>
     </div>
     <div class="page" id="idPage">
-      <div class="idCard" id="card1">      
-      </div>
-      <button class="return" id="returnFromId">RETURN TO FILTERS</button>
+
+      <button id="sortName">Sort By Name</button>
+      <section class="idCard" id="card1"></section>
+      <button id="returnFromId">RETURN TO FILTERS</button>
+
     </div>
     <div class="page" id="idSelected">
       <section class="idCard1" id="idCardSelected">
@@ -75,7 +70,7 @@
     </div>
 
     <div id="root"></div>
-   
+
     <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
