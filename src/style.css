@@ -2,7 +2,6 @@
 }
 body {
     background-image: url("https://i.ibb.co/BVc8GL5/lineas-2.jpg");
-    background-size: cover;
     width: 100%;
     text-align: center;
     display: block;
@@ -17,7 +16,7 @@ body {
 }
 .loginPage, .option, .search, .seachByWord, .returnFromId, .return, .returnId{
   margin: 2%;
-  background-color: rgb(43, 180, 173);
+  background-color: rgb(22, 145, 138);
   text-align: center;
   font-weight: bold;
   font-family: 'Tahoma';

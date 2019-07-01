@@ -27,7 +27,7 @@ showId.addEventListener("click", ()=>{
   let response = filtered.forEach(cards=>{
 impress.innerHTML+=
     `<div class="cardsFiltered" id= "">
-      <img src="${cards.image}" alt="">
+      <img src="${cards.image}" alt="" border="2.5">
       <h2>Name: ${cards.name}</h2>
       <p>Gender: ${cards.gender}</p>
       <p>Status: ${cards.status}</p>
