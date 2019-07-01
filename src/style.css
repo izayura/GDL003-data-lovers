@@ -25,14 +25,14 @@ body {
   border-style: solid;
   border-radius: 7px;
   color: rgb(39, 173, 43);
-  text-decoration-color: rgb(39, 173, 43); 
+  text-decoration-color: rgb(39, 173, 43);
   border-color: black;
   text-shadow:
-  -1px -1px 0 #000,  
+  -1px -1px 0 #000,
   1px -1px 0 #000,
   -1px 1px 0 #000,
   1px 1px 0 #000;
-  color: rgb(104, 117, 128);  
+  color: rgb(104, 117, 128);
 }
 
 IMG {
@@ -45,7 +45,6 @@ IMG {
   width:200px;
   height: 350px;
   float:right;
-
   background-color: aliceblue;
   border-color: black;
   margin: 1.7%;
@@ -54,4 +53,3 @@ IMG {
   font-family: 'Tahoma';
 
 }
-

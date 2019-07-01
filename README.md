@@ -106,6 +106,29 @@ Los criterios de diseño están basados en la estética visual propia de la seri
 
 ### Historias de usuario
 
+#### Historia de usuario 1
+Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1nchez_(personaje)) quiero una base de datos de los seres con los que he interactuado.
+
+Definition of done:
+1. Inicio de sesión, pensado para que sólo nuestro único usuario pueda acceder.
+2. Seleccionar un solo filtro para la búsqueda
+ * Mostrar la información filtrada por id
+ * Mostrar la información en manera de tarjetas
+3. Tener la opción de regresar para hacer otro filtro
+
+#### Historia de usuario 2
+
+Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1nchez_(personaje)) quiero una base de datos de los seres con los que he interactuado y poder filtrar mis busquedas para conocer datos en especifico.
+
+Definition of done:
+1. Inicio de sesión, pensado para que sólo nuestro único usuario pueda acceder.
+2. Seleccionar mas de un filtro para la búsqueda
+ * Mostrar la información filtrada por id, y poder elegir que se muestre de manera alfabetica en orden ascendente o descendente.
+ * En caso de no encontrarse resultados para la búsqueda mostrar una leyenda que así lo especifique.
+3. Tener la opción de regresar para hacer otra búsqueda.
+
+#### Historia de usuario 3
+
 Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1nchez_(personaje)) quiero una base de datos para monitorear a todo el universo, poder anticiparme a sus planes y conocer su ubicación exacta. Ello me ayudará a planear mis actividades minimizando los riesgos y con resultados óptimos.
 
 ![alt text](https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/05/10/Recortada/img_psola_20170929-140352_imagenes_lv_terceros_rick-and-morty-season-3-episode-1-review-the-rickshank-redemption-kQJG-U443479379590EYD-992x558@LaVanguardia-Web.jpg)
