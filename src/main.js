@@ -45,6 +45,7 @@ for (let index = 0; index < filtered.length; index++) {
   "status: "+String(x4) + "<br>" +
   "species: "+String(x5)+"</div>";
 
+
   //imprime los datos en el HTML, transformándolos de string en HTML
   document.getElementById("card1").innerHTML+= response
   

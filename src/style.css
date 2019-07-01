@@ -2,7 +2,6 @@
 }
 body {
     background-image: url("https://i.ibb.co/BVc8GL5/lineas-2.jpg");
-   
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -17,21 +16,24 @@ body {
   margin-top: 17%
 
 }
-.loginPage, .option, .search, .seachByWord, .returnFromId{
+.loginPage, .option, .search, .seachByWord, .returnFromId, .return, .returnId{
   margin: 2%;
-  background-color: black;
+  background-color: rgb(43, 180, 173);
   text-align: center;
-  text-decoration-color: aliceblue;
   font-weight: bold;
   font-family: 'Tahoma';
   font-size: medium;
   border-style: solid;
   border-radius: 7px;
-  color: rgb(104, 117, 128);
-    border-color: black;
-    moz-box-shadow: 0px 6px 0 rgb(102, 104, 98);
-    -webkit-box-shadow: 0px 6px 0 rgb(102, 104, 98);
-}
+  color: rgb(39, 173, 43);
+  text-decoration-color: rgb(39, 173, 43); 
+  border-color: black;
+  text-shadow:
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+ 
 .idCard{
   height: 7%;
   background-color: aliceblue;
@@ -42,7 +44,6 @@ body {
   font-family: 'Tahoma';
 }
 .idCard1{
-
   height: 7%;
   weight:5.5%;
   background-color: aliceblue;
@@ -53,23 +54,6 @@ body {
   font-family: 'Tahoma';
 }
 
-.wrapper {
-  overflow:hidden;
-  width:320px;
-}
-.wrapper div {
-  /* cualquier altura mayor que el total de sumar la anchura de las img */
-  width:330px;
-
-  /* para evitar el margen superior de la primera fila */
-  margin-top:-10px;
-}
-IMG {
-  width:100px;
-  height:75px;
-  float:left;
-  margin:10px 10px 0 0;
-}
 /*.centrar un elemento {
   position: absolute;
   left: 50%;
