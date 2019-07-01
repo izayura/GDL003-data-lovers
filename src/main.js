@@ -23,6 +23,7 @@ showId.addEventListener("click", ()=>{
   let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value);
   //convierte la variable filter de string a objeto JSON
   filtered=JSON.parse(filtered)
+
   let response = filtered.forEach(cards=>{
 impress.innerHTML+=
     `<div class="cardsFiltered" id= "">
