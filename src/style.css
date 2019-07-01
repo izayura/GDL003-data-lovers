@@ -1,8 +1,6 @@
 body {
     background-image: url("https://i.ibb.co/BVc8GL5/lineas-2.jpg");
-    /*background-image: url("https://i.ibb.co/ZWn9PRZ/estrellasconaparato.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     text-align: center
     }
@@ -12,8 +10,6 @@ body {
   border-color: blue;
   border-style: dotted;
   display: none;
-  border-style: solid;
-  border-color: red;
   margin-top: 17%
 
 }
