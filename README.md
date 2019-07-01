@@ -129,7 +129,7 @@ Definition of done:
 
 #### Historia de usuario 3
 
-Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1nchez_(personaje)) quiero una base de datos para monitorear a todo el universo, poder anticiparme a sus planes y conocer su ubicación exacta. Ello me ayudará a planear mis actividades minimizando los riesgos y con resultados óptimos.
+Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1nchez_(personaje)) quiero una base de datos de los seres con los que he interactuado y poder filtrar mis busquedas para conocer datos en especifico, poder anticiparme a sus planes y conocer su ubicación exacta. Ello me ayudará a planear mis actividades minimizando los riesgos y con resultados óptimos.
 
 ![alt text](https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/05/10/Recortada/img_psola_20170929-140352_imagenes_lv_terceros_rick-and-morty-season-3-episode-1-review-the-rickshank-redemption-kQJG-U443479379590EYD-992x558@LaVanguardia-Web.jpg)
 
