@@ -12,18 +12,32 @@ window.dataLovers = {
 
       return myJSON;
 
-    },
+/* INTENTO DE PONER UN IF PARA QUE FILTRE CON 1 O 2 PARAMETROS
+if (condition.value==true || conditionGender.value==true){
+  return personaje.status === condition || personaje.gender === conditionGender;
+} else if (condition.value==true && conditionGender.value==true){
+return personaje.status === condition && personaje.gender === conditionGender;
+} */
 
 /* PARA FILTRAR CON EL BUSCADOR POR PALABRA?????
-obj[key].includes(seachByWord.value)*/
-   
-  sortData:(RICKANDMORTY)=>{
+obj[key].includes(seachByWord.value) */
 
-      RICKANDMORTY.sort(function(a, b){return b-a});
- document.getElementById("idPage").innerHTML = RICKANDMORTY;
-    return "sortedData";
-    
+/* EXPERIMENTOS PARA QUE ARROJE LOS DATOS SEPARADOS
+      let filtering= RICKANDMORTY.filter((idStatus)=>{
+        return idStatus.status === condition
+      })
+        let objectText= JSON.stringify(filtering);
+      return objectText*/
 },
+
+     /* INTENTO DE ORDENAR ALFABETICAMENTE
+      sortData:(RICKANDMORTY)=>{
+
+    let impresionSorted= RICKANDMORTY.sort();
+    let myJSONSorted = JSON.stringify(impresionSorted);
+    return myJSONSorted;
+
+},*/
  computeStats:(/*data*/)=>{
    return "stats";
 }
