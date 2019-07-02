@@ -12,17 +12,17 @@ window.dataLovers = {
 
       return myJSON;
 
-
+    },
 
 /* PARA FILTRAR CON EL BUSCADOR POR PALABRA?????
-obj[key].includes(seachByWord.value)
+obj[key].includes(seachByWord.value)*/
    
-  sortData:(RICKANDMORTY, sortBy, sortOrder)=>{
-
+  sortData:(RICKANDMORTY)=>{
 
       RICKANDMORTY.sort(function(a, b){return b-a});
  document.getElementById("idPage").innerHTML = RICKANDMORTY;
     return "sortedData";
+    
 },
  computeStats:(/*data*/)=>{
    return "stats";
