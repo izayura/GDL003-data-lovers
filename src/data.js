@@ -12,17 +12,13 @@ window.dataLovers = {
 
       return myJSON;
 
+
+
 /* PARA FILTRAR CON EL BUSCADOR POR PALABRA?????
 obj[key].includes(seachByWord.value)
-    /* EXPERIMENTOS PARA QUE ARROJE LOS DATOS SEPARADOS
-      let filtering= RICKANDMORTY.filter((idStatus)=>{
-        return idStatus.status === condition
-      })
-        let objectText= JSON.stringify(filtering);
-      return objectText*/
-},
-
+   
   sortData:(RICKANDMORTY, sortBy, sortOrder)=>{
+
 
       RICKANDMORTY.sort(function(a, b){return b-a});
  document.getElementById("idPage").innerHTML = RICKANDMORTY;
