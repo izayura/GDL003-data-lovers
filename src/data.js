@@ -1,12 +1,12 @@
 window.dataLovers = {
   //obtiene la información del archivo rickanmorty.js
-    filterData:(RICKANDMORTY, condition)=>
+    filterData:(RICKANDMORTY, condition, conditionGender)=>
   {
      //aplicar el filtro a la información
       let impresion = RICKANDMORTY.filter((personaje) =>
       {
         //sustitución
-        return personaje.status === condition;
+        return personaje.status === condition && personaje.gender === conditionGender;
       });//transformar el objeto en string en pantalla
         let myJSON = JSON.stringify(impresion);
 
@@ -26,7 +26,7 @@ obj[key].includes(seachByWord.value)
 
       RICKANDMORTY.sort(function(a, b){return b-a});
  document.getElementById("idPage").innerHTML = RICKANDMORTY;
-  //  return "sortedData";
+    return "sortedData";
 },
  computeStats:(/*data*/)=>{
    return "stats";

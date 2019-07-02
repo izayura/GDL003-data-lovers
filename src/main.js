@@ -1,6 +1,7 @@
 document.getElementById("login").style.display="block";
 
 let condition=document.getElementById("status");
+let conditionGender=document.getElementById("gender");
 const impress=document.getElementById("card1");
 
 let enterButton=document.getElementById("send");
@@ -20,7 +21,7 @@ let showId=document.getElementById("goIds");
 showId.addEventListener("click", ()=>{
   document.getElementById("applyFilters").style.display="none";
   document.getElementById("idPage").style.display="block";
-  let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value);
+  let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value, conditionGender.value);
   //convierte la variable filter de string a objeto JSON
   filtered=JSON.parse(filtered)
 
@@ -41,6 +42,9 @@ let returnFilters=document.getElementById("returnId");
 returnFilters.addEventListener("click", ()=>{
   document.getElementById("idSelected").style.displau="none";
   document.getElementById("applyFilters").style.display="block";
+  condition.value="";
+  conditionGender.value="";
+  impress.value="";
 });
 
 const returnButton =()=>{
