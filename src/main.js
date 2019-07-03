@@ -39,10 +39,17 @@ impress.innerHTML+=
   });
 });
 
+let error=document.getElementById("error");
+error.addEventListener("click", ()=>{
+  document.getElementById("applyFilters").style.display="none";
+  document.getElementById("idPage").style.display="none";
+  document.getElementById("idSelected").style.display="none";
+  document.getElementById("error").style.display="block";
+});
 
 let returnFilters=document.getElementById("returnId");
 returnFilters.addEventListener("click", ()=>{
-  document.getElementById("idSelected").style.displau="none";
+  document.getElementById("idSelected").style.display="none";
   document.getElementById("applyFilters").style.display="block";
 });
 
