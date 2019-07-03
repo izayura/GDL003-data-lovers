@@ -1,18 +1,23 @@
 @media(orientation:landscape){
-}
+
 body {
     background-image: url("https://i.ibb.co/BVc8GL5/lineas-2.jpg");
     width: 100%;
     text-align: center;
     display: block;
-    }
+}
+.frame{
+  float: center;
+  width: 100%; 
+  display: block;
+  height: 100%;
+}
 
 .page{
   border-color: blue;
   border-style: dotted;
   display: none;
   margin-top: 17%
-
 }
 .loginPage, .option, .search, .seachByWord, .returnFromId, .return, .returnId{
   margin: 1%;
@@ -50,5 +55,16 @@ IMG {
   border-style: solid;
   font-weight: bold;
   font-family: 'Tahoma';
-
+}
+.return{
+  background-image:url(https://i.ibb.co/YNGXyMg/boton.png);
+  background-repeat:no-repeat;
+  height:100px;
+  width:100px;
+  border-radius: 48px;
+}
+.picklerick{
+  text-align: left;
+  margin:10px 10px 10px 10px; 
+}
 }

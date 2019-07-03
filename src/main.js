@@ -9,6 +9,8 @@ enterButton.addEventListener("click", ()=>{
   console.log("enter");
   document.getElementById("login").style.display="none";
   document.getElementById("applyFilters").style.display="block";
+  condition.value="0";
+  conditionGender.value="0";
 });
 
 let goStats=document.getElementById("goStats");
@@ -23,9 +25,9 @@ showId.addEventListener("click", ()=>{
   document.getElementById("idPage").style.display="block";
   let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value, conditionGender.value);
   //convierte la variable filter de string a objeto JSON
-  filtered=JSON.parse(filtered)
+  filtered=JSON.parse(filtered);
 
-  let response = filtered.forEach(cards=>{
+  filtered.forEach(cards=>{
 impress.innerHTML+=
     `<div class="cardsFiltered" id= "">
       <img src="${cards.image}" alt="" border="2.5">
@@ -33,18 +35,22 @@ impress.innerHTML+=
       <p>Gender: ${cards.gender}</p>
       <p>Status: ${cards.status}</p>
       <p>Location: ${cards.location.name}</p>
-    </div>`
+    </div>` ;
   });
 });
 
+let error=document.getElementById("error");
+error.addEventListener("click", ()=>{
+  document.getElementById("applyFilters").style.display="none";
+  document.getElementById("idPage").style.display="none";
+  document.getElementById("idSelected").style.display="none";
+  document.getElementById("error").style.display="block";
+});
 
 let returnFilters=document.getElementById("returnId");
 returnFilters.addEventListener("click", ()=>{
-  document.getElementById("idSelected").style.displau="none";
+  document.getElementById("idSelected").style.display="none";
   document.getElementById("applyFilters").style.display="block";
-  condition.value="";
-  conditionGender.value="";
-  impress.value="";
 });
 
 const returnButton =()=>{
@@ -52,6 +58,9 @@ const returnButton =()=>{
   document.getElementById("idPage").style.display="none";
   document.getElementById("error").style.display="none";
   document.getElementById("applyFilters").style.display="block";
+  condition.value="0";
+  conditionGender.value="0";
+  impress.innerHTML=" ";
 };
 
 let returnStats=document.getElementById("returnFromStats");
@@ -63,10 +72,19 @@ returnId.addEventListener("click", returnButton);
 let returnError=document.getElementById("returnFromError");
 returnError.addEventListener("click", returnButton);
 
-let buttonSort= document.getElementById("sortName");
+     /* INTENTO DE ORDENAR ALFABETICAMENTE
+     let buttonSort= document.getElementById("sortName");
 buttonSort.addEventListener("click", ()=>{
-    let sorted= window.dataLovers.sortData(RICKANDMORTY.results, sortBy, sortOrder);
+     let sorted= window.dataLovers.sortData(RICKANDMORTY.results);
     sorted=JSON.parse(sorted);
-    document.getElementById("idPage").innerHTML=sorted;
-    //convierte la variable filter de string a objeto JSON
-})
+    let responseSort = sorted.forEach(cards=>{
+  impress.innerHTML+=
+      `<div class="cardsFiltered" id= "">
+        <img src="${cards.image}" alt="" border="2.5">
+        <h2>Name: ${cards.name}</h2>
+        <p>Gender: ${cards.gender}</p>
+        <p>Status: ${cards.status}</p>
+        <p>Location: ${cards.location.name}</p>
+      </div>`
+});
+}); */
