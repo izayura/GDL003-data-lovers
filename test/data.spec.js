@@ -12,7 +12,7 @@ describe('dataLovers.filterData', () =>{
     expect(typeof dataLovers.filterData).toBe('function');
   });
   it('returns `filteredData`', () => {
-    expect(dataLovers.filterData(RICKANDMORTY, "male")).toBe("filteredData");
+    expect(dataLovers.filterData(RICKANDMORTY.gender, "male")).toBe("filtered");
   });
 });
 

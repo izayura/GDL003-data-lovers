@@ -6,7 +6,8 @@ window.dataLovers = {
       let impresion = RICKANDMORTY.filter((personaje) =>
       {
         //sustitución
-        return personaje.status === condition && personaje.gender === conditionGender;
+        return personaje.status === condition || personaje.gender === conditionGender;
+        //return personaje.status === condition && personaje.gender === conditionGender;
       });//transformar el objeto en string en pantalla
         let myJSON = JSON.stringify(impresion);
 
@@ -18,7 +19,16 @@ if (condition.value==true || conditionGender.value==true){
 } else if (condition.value==true && conditionGender.value==true){
 return personaje.status === condition && personaje.gender === conditionGender;
 } */
+/* SEGUNDO INTENTO CON IF Y 2 FILTROS
+if (condition.value){
+let conditionStatus = personaje.status === condition;
+console.log("HOLA GLO");
+return conditionStatus;
 
+} else if (conditionGender.value) {
+let conditionGen = personaje.gender === conditionGender;
+return conditionGen;
+} */
 /* PARA FILTRAR CON EL BUSCADOR POR PALABRA?????
 obj[key].includes(seachByWord.value) */
 
