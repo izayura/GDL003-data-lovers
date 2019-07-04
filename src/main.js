@@ -59,11 +59,11 @@ buttonSort.addEventListener("click", ()=>{
   let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value, conditionGender.value);
   //convierte la variable filter de string a objeto JSON
   filtered=JSON.parse(filtered);
-  
-  let order=new Array() 
-  
+
+  let order=new Array()
+
   array = filtered.forEach(cards=>{
-   
+
         let data={
           name: cards.name,
           image: cards.image,
@@ -72,7 +72,7 @@ buttonSort.addEventListener("click", ()=>{
           location: cards.location.name
         }
         order.push(data)
-        
+
   });
   order.sort((a, b) => (a.name > b.name) ? 1 : -1)
   console.log(order);
@@ -89,6 +89,42 @@ buttonSort.addEventListener("click", ()=>{
       });
 });
 
+//funcion para acomodo Z-A
+let buttonSortZA= document.getElementById("sortNameZA");
+buttonSortZA.addEventListener("click", ()=>{
+  let card =document.getElementById("card1")
+  let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value, conditionGender.value);
+  //convierte la variable filter de string a objeto JSON
+  filtered=JSON.parse(filtered);
+
+  let order=new Array()
+
+  array = filtered.forEach(cards=>{
+
+        let data={
+          name: cards.name,
+          image: cards.image,
+          gender: cards.gender,
+          status: cards.status,
+          location: cards.location.name
+        }
+        order.push(data)
+
+  });
+  order.sort((a, b) => (b.name > a.name) ? 1 : -1)
+  console.log(order);
+  impress.innerHTML = "";
+  order.forEach(cards=>{
+    impress.innerHTML+=
+        `<div class="cardsFiltered" id= "">
+          <img src="${cards.image}" alt="" border="2.5">
+          <h2>Name: ${cards.name}</h2>
+          <p>Gender: ${cards.gender}</p>
+          <p>Status: ${cards.status}</p>
+          <p>Location: ${cards.location.name}</p>
+        </div>` ;
+      });
+});
 
 
 let error=document.getElementById("error");
@@ -100,12 +136,6 @@ error.addEventListener("click", ()=>{
   document.getElementById("error").style.display="block";
 });
 
-let returnFilters=document.getElementById("returnId");
-returnFilters.addEventListener("click", ()=>{
-  document.getElementById("login").style.display="none";
-  document.getElementById("idSelected").style.display="none";
-  document.getElementById("applyFilters").style.display="block";
-});
 
 const returnButton =()=>{
   document.getElementById("login").style.display="none";
