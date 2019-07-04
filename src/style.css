@@ -64,6 +64,15 @@ IMG {
   border-radius: 48px;
 }
 
+.showStats{
+  background-image:url(https://i.ibb.co/Gn04PDR/mrmeeseks-STATS.png);
+  background-repeat:no-repeat;
+  background-color: transparent;
+  height:800px;
+  width:542px;
+  border-style: transparent;
+}
+
 .picklerick{
   text-align: left;
   margin:10px 10px 10px 10px;
