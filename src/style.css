@@ -1,4 +1,9 @@
 @media(orientation:landscape){
+}
+@font-face {
+    font-family: "Get Schwifty";
+    src: url('\get_schwifty__a_rick_and_morty_font_by_jonizaak_dajw4u8.ttf');
+}
 
 body {
     background-image: url("https://i.ibb.co/BVc8GL5/lineas-2.jpg");
@@ -9,7 +14,7 @@ body {
 
 .frame{
   float: center;
-  width: 100%; 
+  width: 100%;
   display: block;
   height: 100%;
 }
@@ -62,6 +67,6 @@ IMG {
 
 .picklerick{
   text-align: left;
-  margin:10px 10px 10px 10px; 
+  margin:10px 10px 10px 10px;
 }
 }
