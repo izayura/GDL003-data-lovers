@@ -13,15 +13,8 @@ window.dataLovers = {
 
       return myJSON;
     },
-     // ordenar alfabeticamente
+    
 
-<<<<<<< HEAD
-    sortData: (RICKANDMORTY)=>{
-      RICKANDMORTY.name.sort(impresion)
-      return myJSONSorted;
-      },
-=======
->>>>>>> 720e5f396504afb12a79c241523213d16cc3effb
 /* INTENTO DE PONER UN IF PARA QUE FILTRE CON 1 O 2 PARAMETROS
 if (condition.value==true || conditionGender.value==true){
   return personaje.status === condition || personaje.gender === conditionGender;
@@ -47,22 +40,10 @@ obj[key].includes(seachByWord.value) */
       })
         let objectText= JSON.stringify(filtering);
       return objectText*/
-<<<<<<< HEAD
+ // ordenar alfabeticamente
 
 
-=======
-},
->>>>>>> 720e5f396504afb12a79c241523213d16cc3effb
-
-     /* INTENTO DE ORDENAR ALFABETICAMENTE
-      sortData:(RICKANDMORTY)=>{
-
-    let impresionSorted= RICKANDMORTY.sort();
-    let myJSONSorted = JSON.stringify(impresionSorted);
-    return myJSONSorted;
-
-},*/
- computeStats:(/*data*/)=>{
+/* computeStats:(/*data)=>{
    return "stats";
-}
+} */
 };
