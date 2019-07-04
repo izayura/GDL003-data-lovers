@@ -5,7 +5,7 @@ window.dataLovers = {
      //aplicar el filtro a la información
       let impresion = RICKANDMORTY.filter((personaje) =>
       {
-        //sustitución
+      //filtra con la condicion de status o la de gender(pero no al mismo tiempo)
         return personaje.status === condition || personaje.gender === conditionGender;
         //return personaje.status === condition && personaje.gender === conditionGender;
       });//transformar el objeto en string en pantalla
@@ -14,14 +14,10 @@ window.dataLovers = {
       return myJSON;
     },
      // ordenar alfabeticamente
-
-<<<<<<< HEAD
     sortData: (RICKANDMORTY)=>{
-      RICKANDMORTY.name.sort(impresion)
+      RICKANDMORTY.name.sort(impresion);
       return myJSONSorted;
       },
-=======
->>>>>>> 720e5f396504afb12a79c241523213d16cc3effb
 /* INTENTO DE PONER UN IF PARA QUE FILTRE CON 1 O 2 PARAMETROS
 if (condition.value==true || conditionGender.value==true){
   return personaje.status === condition || personaje.gender === conditionGender;
@@ -47,12 +43,7 @@ obj[key].includes(seachByWord.value) */
       })
         let objectText= JSON.stringify(filtering);
       return objectText*/
-<<<<<<< HEAD
 
-
-=======
-},
->>>>>>> 720e5f396504afb12a79c241523213d16cc3effb
 
      /* INTENTO DE ORDENAR ALFABETICAMENTE
       sortData:(RICKANDMORTY)=>{
@@ -62,7 +53,7 @@ obj[key].includes(seachByWord.value) */
     return myJSONSorted;
 
 },*/
- computeStats:(/*data*/)=>{
+/* computeStats:(/*data)=>{
    return "stats";
-}
+}, */
 };
