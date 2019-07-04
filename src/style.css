@@ -11,6 +11,7 @@ body {
     text-align: center;
     display: block;
 }
+
 .frame{
   float: center;
   width: 100%;
@@ -18,12 +19,6 @@ body {
   height: 100%;
 }
 
-.page{
-  border-color: blue;
-  border-style: dotted;
-  display: none;
-  margin-top: 17%
-}
 .loginPage, .option, .search, .seachByWord, .returnFromId, .return, .returnId{
   margin: 1%;
   background-color: rgb(22, 145, 138);
@@ -61,6 +56,7 @@ IMG {
   font-weight: bold;
   font-family: 'Tahoma';
 }
+
 .return{
   background-image:url(https://i.ibb.co/YNGXyMg/boton.png);
   background-repeat:no-repeat;
@@ -68,6 +64,7 @@ IMG {
   width:100px;
   border-radius: 48px;
 }
+
 .picklerick{
   text-align: left;
   margin:10px 10px 10px 10px;
