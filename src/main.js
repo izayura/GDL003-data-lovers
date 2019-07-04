@@ -13,8 +13,8 @@ enterButton.addEventListener("click", ()=>{
   console.log("enter");
   document.getElementById("login").style.display="none";
   document.getElementById("applyFilters").style.display="block";
-  document.getElementById("idPage").style.display="block";
-  document.getElementById("showStats").style.display="block";
+  //document.getElementById("idPage").style.display="block";
+  //document.getElementById("showStats").style.display="block";
   condition.value="0";
   conditionGender.value="0";
 });
@@ -75,7 +75,18 @@ buttonSort.addEventListener("click", ()=>{
         
   });
   order.sort((a, b) => (a.name > b.name) ? 1 : -1)
-console.log(order)
+  console.log(order);
+  impress.innerHTML = "";
+  order.forEach(cards=>{
+    impress.innerHTML+=
+        `<div class="cardsFiltered" id= "">
+          <img src="${cards.image}" alt="" border="2.5">
+          <h2>Name: ${cards.name}</h2>
+          <p>Gender: ${cards.gender}</p>
+          <p>Status: ${cards.status}</p>
+          <p>Location: ${cards.location.name}</p>
+        </div>` ;
+      });
 });
 
 
