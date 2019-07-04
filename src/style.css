@@ -1,5 +1,5 @@
 @media(orientation:landscape){
-}
+
 @font-face {
     font-family: "Get Schwifty";
     src: url('\get_schwifty__a_rick_and_morty_font_by_jonizaak_dajw4u8.ttf');
@@ -63,6 +63,15 @@ IMG {
   height:100px;
   width:100px;
   border-radius: 48px;
+}
+
+.showStats{
+  background-image:url(https://i.ibb.co/Gn04PDR/mrmeeseks-STATS.png);
+  background-repeat:no-repeat;
+  background-color: transparent;
+  height:800px;
+  width:542px;
+  border-style: transparent;
 }
 
 .picklerick{

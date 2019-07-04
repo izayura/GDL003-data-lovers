@@ -13,8 +13,8 @@ enterButton.addEventListener("click", ()=>{
   console.log("enter");
   document.getElementById("login").style.display="none";
   document.getElementById("applyFilters").style.display="block";
-  //document.getElementById("idPage").style.display="block";
-  //document.getElementById("showStats").style.display="block";
+  document.getElementById("idPage").style.display="none";
+  document.getElementById("showStats").style.display="none";
   condition.value="0";
   conditionGender.value="0";
 });
@@ -48,9 +48,6 @@ impress.innerHTML+=
     </div>` ;
   });
 });
-
-
-
 
 //sort by name
 let buttonSort= document.getElementById("sortName");
@@ -100,12 +97,12 @@ error.addEventListener("click", ()=>{
   document.getElementById("error").style.display="block";
 });
 
-let returnFilters=document.getElementById("returnId");
+/*let returnFilters=document.getElementById("returnId");
 returnFilters.addEventListener("click", ()=>{
   document.getElementById("login").style.display="none";
   document.getElementById("idSelected").style.display="none";
   document.getElementById("applyFilters").style.display="block";
-});
+});*/
 
 const returnButton =()=>{
   document.getElementById("login").style.display="none";
@@ -127,19 +124,4 @@ returnId.addEventListener("click", returnButton);
 let returnError=document.getElementById("returnFromError");
 returnError.addEventListener("click", returnButton);
 
-     /* INTENTO DE ORDENAR ALFABETICAMENTE
-     let buttonSort= document.getElementById("sortName");
-buttonSort.addEventListener("click", ()=>{
-     let sorted= window.dataLovers.sortData(RICKANDMORTY.results);
-    sorted=JSON.parse(sorted);
-    let responseSort = sorted.forEach(cards=>{
-  impress.innerHTML+=
-      `<div class="cardsFiltered" id= "">
-        <img src="${cards.image}" alt="" border="2.5">
-        <h2>Name: ${cards.name}</h2>
-        <p>Gender: ${cards.gender}</p>
-        <p>Status: ${cards.status}</p>
-        <p>Location: ${cards.location.name}</p>
-      </div>`
-});
-}); */
+    
