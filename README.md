@@ -2,7 +2,6 @@
 
 ## Índice
 
-- [Preámbulo](#preámbulo)
 - [Descripción](#resumen-del-proyecto)
 - [Consideraciones generales](#consideraciones-generales)
 - [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
@@ -14,24 +13,6 @@
 
 ---
 
-## Preámbulo
-
-Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
-
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
-
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario.
-
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
-
-\* Puedes ver el detalle de la data [aquí](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-y la interfaz construida [aquí](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
 
 ## Resumen del proyecto
 
@@ -61,7 +42,7 @@ podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
   interfaz se despliega usando [GitHub Pages](https://pages.github.com/).
 
 
-- Este proyecto se desarrolló en una dupla formada por Gloria Ramírez Robles y Tegthyn Coral Quiñones Gutiérrez como el segundo proyecto del bootcamp de Laboratoria, el cual se titula _Data Lovers_.
+- Este proyecto se desarrolló en una dupla formada por Gloria Ramírez Robles y Tegthyn Coral Quiñones Gutiérrez como el segundo proyecto del bootcamp de Laboratoria Guadalajara tercera generación, el cual se titula _Data Lovers_.
 - Tiempo para completarlo: 3 semana divididas en 3 sprints (una entrega del producto funcional al término de cada sprint).
 
 ## Objetivos de aprendizaje
@@ -92,17 +73,17 @@ De manera puntual a continuación se presenta cada uno de los temas aprendidos e
 
 ## Alcances esperados
 
-Los criterios para considerar que has completado este proyecto son:
+Los criterios para considerar que el proyecto desarrollado está completo son:
 
 ### Definición del producto
 
 Este ejercicio de Web app está diseñado para que el usuario Rick Sánchez tenga acceso a la información básica de todos los seres del multiverso en que se desarrolla la serie.
 
-La presente Web app provee esta información ordenada en base a los filtros seleccionados a partir de la cual se muestran los datos ordenados en dos formas; en una estadística y en tarjetas de identificación, las cuales a su vez pueden ser seleccionadas individualmente y se ordenan alfabéticamente.
+La presente Web app provee esta información ordenada en base a los filtros seleccionados (Gender y status) a partir de la cual se muestran los datos ordenados en tarjetas de identificación, las cuales a su vez pueden ser ordenadas alfabéticamente de manera ascendente y descendente.
 
-En conclusión, este proyecto cubre la función de monitoreo de los personajes, su localización, estatus, etc. para que Rick pueda continuar con sus investigaciones evadiendo la justicia y a quienes lo persiguen, considerando esta información.
+En conclusión, este proyecto cubre la función de monitoreo de los personajes, donde elegimos mostrar; nombre, género, status y su ubicación actual.Considerando esta información Rick podrá continuar con sus investigaciones evadiendo la justicia y a quienes lo persiguen.
 
-Los criterios de diseño están basados en la estética visual propia de la serie, para favorecer el hecho de que pueda verse como si fuera una Web app que usa Rick dentro de la serie para agendar sus planes, a manera de metahistoria. De forma general tratamos de apegarnos a los colores saturados, elementos delineados en negro y un  poco de volumen a algunos objetos como botones.
+Los criterios de diseño están basados en la estética visual propia de la serie, para favorecer el hecho de que pueda verse como si fuera una Web app que usa Rick dentro de la serie para agendar sus planes, a manera de metahistoria. De forma general tratamos de apegarnos a los colores saturados, elementos delineados en negro y un  poco de volumen a algunos objetos como los botones.
 
 ### Historias de usuario
 
@@ -113,7 +94,6 @@ Definition of done:
 1. Inicio de sesión, pensado para que sólo nuestro único usuario pueda acceder.
 2. Seleccionar un solo filtro para la búsqueda
  * Mostrar la información filtrada por id
- * Mostrar la información en manera de tarjetas
 3. Tener la opción de regresar para hacer otro filtro
 
 #### Historia de usuario 2
@@ -122,20 +102,22 @@ Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1
 
 Definition of done:
 1. Inicio de sesión, pensado para que sólo nuestro único usuario pueda acceder.
-2. Seleccionar mas de un filtro para la búsqueda
- * Mostrar la información filtrada por id, y poder elegir que se muestre de manera alfabetica en orden ascendente o descendente.
- * En caso de no encontrarse resultados para la búsqueda mostrar una leyenda que así lo especifique.
+2. Seleccionar mas de un filtro para la búsqueda.
+    * Mostrar la información filtrada por id, y poder elegir que se muestre de manera alfabetica en orden ascendente o descendente.
+    * Mostrar la información en formato de tarjetas de identificación.
 3. Tener la opción de regresar para hacer otra búsqueda.
+4. Poder ordenar la información filtrada alfabéticamente de forma ascendente y descendente.
+5. Tener una interfaz acode a la estética de la serie y visualmente agradable además de funcional.
 
 #### Historia de usuario 3
 
-Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1nchez_(personaje)) quiero una base de datos de los seres con los que he interactuado y poder filtrar mis busquedas para conocer datos en especifico, poder anticiparme a sus planes y conocer su ubicación exacta. Ello me ayudará a planear mis actividades minimizando los riesgos y con resultados óptimos.
+Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1nchez_(personaje)) quiero una base de datos de los seres con los que he interactuado, poder filtrar mis busquedas y consultar estadísticas de los filtros empleados. Con esto podré conocer datos en especifico, anticiparme a los planes de mis enemigos y conocer su ubicación exacta. 
 
 ![alt text](https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/05/10/Recortada/img_psola_20170929-140352_imagenes_lv_terceros_rick-and-morty-season-3-episode-1-review-the-rickshank-redemption-kQJG-U443479379590EYD-992x558@LaVanguardia-Web.jpg)
 
 Definition of done:
 1. Inicio de sesión, pensado para que sólo nuestro único usuario pueda acceder.
-2. Seleccionar los filtros para la búsqueda, para estadísticas o por palabra.
+2. Seleccionar los filtros para la búsqueda de tarjetas identificadoras y estadísticas.
  * Mostrar la información filtrada alfabéticamente, donde se puede elegir entre orden ascendente o descendente.
  * Mostrar las estadísticas para el filtro seleccionado.
  * En caso de no encontrarse resultados para la búsqueda mostrar una leyenda que así lo especifique.
@@ -161,24 +143,16 @@ Estos son los dibujos en los que basamos el diseño que teniamos pensado para la
 
 #### Prototipo de alta fidelidad
 
-Teniendo ya claro el estilo y las páginas que queriamos utilizar en nuestra web app, buscamos una imagen que se adaptará al aparato que buscamos simular, y con ayuda de editores de gráficos(gimp y photoshop) la limpiamos de detalles externos(fondo, manos, borrar lo que ya aparecía en la pantalla del mismo), y agregamos el diseño que buscabamos tuviera en nuestro proyecto. A su vez utilizamos Marvel para agregar algunos botones con el mismo estilo ya utilizado y creamos un prototipo de alta fidelidad con botones funcionales para recorrer la interfaz de la web app.
+Teniendo ya claro el estilo y las páginas que queriamos utilizar en nuestra web app, buscamos una imagen que se adaptará al aparato que buscamos simular, y con ayuda de editores de gráficos(gimp y photoshop) la limpiamos de detalles externos(fondo, manos, borrar lo que ya aparecía en la pantalla del mismo), y agregamos el diseño que buscabamos tuviera en nuestro proyecto. 
+
+Para elaborar el prototipo de alta fidelidad fueron muy útiles nuestros conocimientos previos sobre editores de imagen, comenzamos por dividirnos los div que conformaban el prototipo y trabajamos a la par cada quien en el editor de su elección, usamos Photoshop y Gimp. Una vez que tuvimos nuestas imágenes listas para cada pantalla se dio la interacción con botones en Marvel donde creamos un prototipo de alta fidelidad con botones funcionales para recorrer la interfaz de la web app.
 
 ## https://marvelapp.com/541bc74
 
-El principal reto con lo esperado en base al diseño de nuestro prototipo de alta fidelidad será poder diseñar la web app dentro de la pantalla del aparato, con todos sus formularios y botones funcionales dentro de un diseño responsivo. En caso de estar limitadas con el tiempo nos enfocaremos en recrear solo la pantalla del aparato para mas adelante en el sprint 3 de iteración buscar lograr el resultado esperado con el diseño de la pantalla y que funcione de manera responsiva.
+El principal reto con lo esperado en base al diseño de nuestro prototipo de alta fidelidad ha sido poder diseñar la web app dentro de la pantalla del aparato, con todos sus formularios y botones funcionales dentro de un diseño responsivo. 
+Por ahora se muestra el aparato sólo en la pantalla de inicio unicamente ya que aún no hemos logrado que se haga scroll dentro de la pantalla flotante. Sin embargo, el resultado visual sigue en sintonía con lo planteado en un inicio. 
+Probablemente durante la tercera semana tengamos oportinidad de implementar un diseño responsivo y de hacer aparecer el aparato como si tuviera una pantalla dentro.
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para hackear. Además, tu
-diseño debe seguir los fundamentos de _visual design_. También, te recomendamos exportar
-tu diseño a [Zeplin](https://zeplin.io/) y podrías utilizar las especificaciones de
-estilo que te proporcione Zeplin al momento de implementar tus diseños en código.
 
 #### Testeos de usabilidad
 
@@ -361,89 +335,25 @@ implementadas en el archivo `data.js`.
 
 ---
 
-## Pistas sobre cómo empezar a trabajar en el proyecto
-
-Antes de empezar a escribir código, debes definir qué deberá hacer el producto
-en base al conocimiento que puedas obtener de tu usuario. Estas preguntas te
-pueden ayudar:
-
-- ¿Quiénes son los principales usuarios de producto?
-- ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-- ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-- ¿Cuándo utilizan o utilizarían el producto?
-
-Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
-
-1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus \_coaches\* te compartirán un \_link\* a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1)
-   un `remote` hacia el mismo.
-2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/) a tu computadora (copia local).
-3. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-5. A codear se ha dicho! :rocket:
-
----
-
-## Contenido de referencia
-
-### Diseño de experiencia de usuario (User Experience Design)
-
-- Investigación con usuarios / entrevistas
-- Principios de diseño visual
-
-### Desarrollo Front-end
-
-- Unidad de testing en curso de JavaScript en LMS.
-- Unidad de arreglos en curso de JavaScript en LMS.
-- Unidad de objetos en curso de JavaScript en LMS.
-- Unidad de funciones en curso de JavaScript en LMS.
-- Unidad de DOM en curso de Browser JavaScript en LMS.
-- [Array en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
-- [Array.sort en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort)
-- [Array.map en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map)
-- [Array.filter en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
-- [Array.reduce en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce)
-- [Array.forEach en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
-- [Object.keys en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/keys)
-- [Object.entries en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/entries)
-- [Fetch API en MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-- [json.org](https://json.org/json-es.html)
-
-### Herramientas
-
-- [Git](https://git-scm.com/)
-- [GitHub](https://github.com/)
-- [GitHub Pages](https://pages.github.com/)
-- [Node.js](https://nodejs.org/)
-- [Jest](https://jestjs.io/)
-
----
-
 ## Checklist
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
-- [ ] Pasa linter (`npm pretest`)
+- [✔] Usa VanillaJS.
+- [✔] No hace uso de `this`.
+- [✔] Pasa linter (`npm pretest`)
 - [ ] Pasa tests (`npm test`)
 - [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [✔] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [✔] Incluye historias de usuario en `README.md`.
+- [✔] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
-- [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+- [✔] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
 - [ ] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
-- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-- [ ] UI: Permite filtrar data en base a una condición.
+- [✔] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [✔] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [✔] UI: Permite filtrar data en base a una condición.
 
 ## Checklist (Hacker Edition)
 
