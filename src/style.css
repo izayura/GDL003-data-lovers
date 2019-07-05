@@ -45,7 +45,7 @@ IMG {
 .cardsFiltered{
   width:200px;
   height: 350px;
-  float:right;
+  float:left;
   background-color: aliceblue;
   border-color: black;
   margin: 1.7%;
@@ -68,7 +68,7 @@ IMG {
   background-color: transparent;
   height:400px;
   width:271px;
-  border-style: 
+  border-style:
 }
 
 .picklerick{
