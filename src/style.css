@@ -18,7 +18,7 @@ div.page1{
   display: block;
   background-image: url("https://i.ibb.co/MPpNBBj/pantalla-con-lineas-corregida.png");
   background-color: transparent;
-| background-image: center;
+  background-image: center;
   border:0;
   outline: none;
   width: 100%;
