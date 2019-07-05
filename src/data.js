@@ -8,10 +8,10 @@ window.dataLovers = {
       //filtra con la condicion de status o la de gender(pero no al mismo tiempo)
         return personaje.status === condition || personaje.gender === conditionGender;
         //return personaje.status === condition && personaje.gender === conditionGender;
-      });//transformar el objeto en string en pantalla
+      });
+      //transformar el objeto en string en pantalla
         let myJSON = JSON.stringify(impresion);
-
-      return myJSON;
+        return myJSON;
     },
 
 /* PARA FILTRAR CON EL BUSCADOR POR PALABRA?????

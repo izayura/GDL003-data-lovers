@@ -3,6 +3,8 @@ document.getElementById("idPage").style.display="none";
 document.getElementById("showStats").style.display="none";
 document.getElementById("applyFilters").style.display="none";
 document.getElementById("error").style.display="none";
+//const RICKANDMORTY= '../src/data/rickandmorty/rickandmorty.js';
+
 
 let condition=document.getElementById("status");
 let conditionGender=document.getElementById("gender");
@@ -52,14 +54,14 @@ impress.innerHTML+=
 //sort by name
 let buttonSort= document.getElementById("sortName");
 buttonSort.addEventListener("click", ()=>{
-  let card =document.getElementById("card1")
+//  let card =document.getElementById("card1")
   let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value, conditionGender.value);
   //convierte la variable filter de string a objeto JSON
   filtered=JSON.parse(filtered);
 
-  let order=new Array()
+  let order=new Array();
 
-  array = filtered.forEach(cards=>{
+  filtered.forEach(cards=>{
 
         let data={
           name: cards.name,
@@ -67,11 +69,11 @@ buttonSort.addEventListener("click", ()=>{
           gender: cards.gender,
           status: cards.status,
           location: cards.location.name
-        }
-        order.push(data)
+        };
+        order.push(data);
 
   });
-  order.sort((a, b) => (a.name > b.name) ? 1 : -1)
+  order.sort((a, b) => (a.name > b.name) ? 1 : -1);
   console.log(order);
   impress.innerHTML = "";
   order.forEach(cards=>{
@@ -89,14 +91,14 @@ buttonSort.addEventListener("click", ()=>{
 //funcion para acomodo Z-A
 let buttonSortZA= document.getElementById("sortNameZA");
 buttonSortZA.addEventListener("click", ()=>{
-  let card =document.getElementById("card1")
+  //let card =document.getElementById("card1")
   let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value, conditionGender.value);
   //convierte la variable filter de string a objeto JSON
   filtered=JSON.parse(filtered);
 
-  let order=new Array()
+  let order=new Array();
 
-  array = filtered.forEach(cards=>{
+  filtered.forEach(cards=>{
 
         let data={
           name: cards.name,
@@ -104,11 +106,11 @@ buttonSortZA.addEventListener("click", ()=>{
           gender: cards.gender,
           status: cards.status,
           location: cards.location.name
-        }
-        order.push(data)
+        };
+        order.push(data);
 
   });
-  order.sort((a, b) => (b.name > a.name) ? 1 : -1)
+  order.sort((a, b) => (b.name > a.name) ? 1 : -1);
   console.log(order);
   impress.innerHTML = "";
   order.forEach(cards=>{
@@ -153,5 +155,3 @@ returnId.addEventListener("click", returnButton);
 
 let returnError=document.getElementById("returnFromError");
 returnError.addEventListener("click", returnButton);
-
-    
