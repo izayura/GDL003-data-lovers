@@ -9,9 +9,8 @@
   </head>
   <body>
 
-      <div class="page" id="login">
+      <div class="page" id="login" >
           <form>
-              <img class="frame" src="https://i.ibb.co/315HnM0/estrellasconaparatosinfondo.png"/>
             <input class="loginPage" type="text" id="user" placeholder="USER" HSPACE="10" VSPACE="10">
             <br>
             <input class="loginPage" type="password" id="password" placeholder="PASSWORD" HSPACE="10" VSPACE="10">
@@ -29,7 +28,6 @@
         <option selected value="0">Status</option>
         <option value="Alive">Alive</option>
         <option value="Dead">Dead</option>
-        <option value="unknown">Unknown</option>
       </select>
       <br>
       <select class="option" id="gender">
@@ -39,7 +37,7 @@
         <option value="unknown">Unknown</option>
       </select>
       <br>
-      <button class="showStats" id="goStats"></button>
+      <button class="search" id="goStats">STATS</button>
       <br>
       <button class="search" id="goIds">SHOW ID'S</button>
     <br>
@@ -49,8 +47,7 @@
     </div>
     <div class="page" id="idPage">
 
-      <button class="sort" id="sortName">Sort By Name A-Z</button>
-      <button class="sort" id="sortNameZA">Sort By Name Z-A</button>
+      <button class="sort" id="sortName">Sort By Name</button>
       <section class="idCard" id="card1"></section>
       <button class="return" id="returnFromId"></button>
 
