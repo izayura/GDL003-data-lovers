@@ -10,15 +10,19 @@ window.dataLovers = {
         //return personaje.status === condition && personaje.gender === conditionGender;
       });
       //transformar el objeto en string en pantalla
-        let myJSON = JSON.stringify(impresion);
-        return myJSON;
+      let myJSON = JSON.stringify(impresion);
+      return myJSON;
     },
+
+    sortData: ()=>{
+
+},
 
 /* PARA FILTRAR CON EL BUSCADOR POR PALABRA?????
 obj[key].includes(seachByWord.value) */
 
-/* computeStats:(/*data)=>{
-   return "stats";
-} */
+computeStats:()=>{
 
+
+},
 };
