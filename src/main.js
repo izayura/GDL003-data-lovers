@@ -1,8 +1,7 @@
 document.getElementById("login").style.display="block";
 document.getElementById("idPage").style.display="none";
 document.getElementById("applyFilters").style.display="none";
-//const RICKANDMORTY= '../src/data/rickandmorty/rickandmorty.js';
-
+document.getElementById("user").value="";
 
 let condition=document.getElementById("status");
 let conditionGender=document.getElementById("gender");
@@ -68,7 +67,6 @@ buttonSort.addEventListener("click", ()=>{
           location: cards.location.name
         };
         order.push(data);
-
   });
   order.sort((a, b) => (a.name > b.name) ? 1 : -1);
   impress.innerHTML = "";

@@ -1,5 +1,5 @@
 require('../src/data.js');
-const RICKANDMORTY= require('../src/data/rickandmorty/rickandmorty.js');
+const RICKANDMORTY= require('../src/data/rickandmorty/rickandmorty.json');
 
 describe('RICKANDMORTY', () => {
 
@@ -20,11 +20,10 @@ describe('dataLovers.filterData', () =>{
   it('is a function', () => {
     expect(typeof dataLovers.filterData).toBe('function');
   });
-  it('returns `Rick Sanchez`', () => {
-    expect(dataLovers.filterData(RICKANDMORTY.gender, "male")).toBe("Rick Sanchez");
+  it('returns `Abradolf Lincler`', () => {
+    expect(dataLovers.filterData(RICKANDMORTY.results, "unknown")[0].name).toBe("Abradolf Lincler");
   });
 });
-
 describe('dataLovers.sortData', () => {
   it('is a function', () => {
     expect(typeof dataLovers.sortData).toBe('function');
