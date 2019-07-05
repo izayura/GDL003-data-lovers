@@ -5,18 +5,72 @@
     src: url('\get_schwifty__a_rick_and_morty_font_by_jonizaak_dajw4u8.ttf');
 }
 body {
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/93853995680225960/7B23152D636B4F3F4AC4C774454242CA8932781B/");
+    width: 100%;
     text-align: center;
     display: block;
     height: 100%;
     background-size: 100% 100%;
     background-size: cover;
+    background-repeat: no-repeat;
+}
+div.page1{
+  display: block;
+  background-image: url("https://i.ibb.co/MPpNBBj/pantalla-con-lineas-corregida.png");
+  background-color: transparent;
+| background-image: center;
+  border:0;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.loginPage, .loginPageUser, .loginPageEnter{
+  margin: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 12; 
+  background-color: rgb(39, 173, 43);
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Tahoma';
+  font-size: larger;
+  -webkit-text-fill-color: rgb(35, 116, 38);
+  border-style: solid;
+  border-radius: 7px;
+  color: rgb(39, 173, 43);
+  border-color: black;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  color: rgb(39, 173, 43);
+  -webkit-box-shadow: -3px 7px 3px 12px #000000; 
+box-shadow: -3px 7px 3px 12px #000000;
+padding: 6px;
+}
 
-.loginPage, .option, .search, .seachByWord, .returnFromId, .return, .sort{
+.loginPageUser{
+  margin-top: 10%;
+}
+
+.loginPageEnter{
+  margin-bottom: 10%;
+}
+
+.loginPageImg{
+  width: 190px; height: 170px;
+  -webkit-box-shadow: -3px 7px 0px 12px #000000; 
+  box-shadow: -3px 7px 0px 12px #000000;
+
+}
+
+.option, .search, .seachByWord, .returnFromId, .return, .sort{
   margin: 5%;
   margin-bottom: 5%
-  text-align: center;
   align-items: center;
   background-color: rgb(22, 145, 138);
   text-align: center;
