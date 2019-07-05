@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width"/>
         <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-
   </head>
   <body>
-
       <div class="page1" id="login" >
           <form>
-
             <input class="loginPageUser" type="text" id="user" placeholder="USER" hspace="10" vspace="10">
             <br>
             <input class="loginPage" type="password" id="password" placeholder="PASSWORD" hspace="10" vspace="10">
@@ -23,12 +20,12 @@
         </div>
     <div class="page" id="applyFilters">
       <br>
-      <input class="seachbar" id="seachByWord" placeholder="SEARCH BY WORD">
-      <br>
+    <!--<input class="seachbar" id="seachByWord" placeholder="SEARCH BY WORD">-->
       <select class="option" id="status">
         <option selected value="0">Status</option>
         <option value="Alive">Alive</option>
         <option value="Dead">Dead</option>
+        <option value="unknown">Unknown</option>
       </select>
       <br>
       <select class="option" id="gender">
@@ -38,32 +35,28 @@
         <option value="unknown">Unknown</option>
       </select>
       <br>
-      <button class="search" id="goStats">STATS</button>
-      <br>
+    <!--    <button class="search" id="goStats">STATS</button>
+      <br>-->
       <button class="search" id="goIds">SHOW ID'S</button>
     <br>
   </div>
-    <div class="page" id="showStats">
+    <!--<div class="page" id="showStats">
       <button class="return" id="returnFromStats"></button>
-    </div>
+    </div>-->
     <div class="page" id="idPage">
       <button class="sort" id="sortName">Sort By Name A-Z</button>
       <button class="sort" id="sortNameZA">Sort By Name Z-A</button>
       <section class="idCard" id="card1"></section>
       <button class="return" id="returnFromId"></button>
-
     </div>
-    <div class="page" id="error">
+    <!--<div class="page" id="error">
         <img class="picklerick" src="https://i.ibb.co/YNVcvqg/pickerick.jpg"  width="150" height="130" hspace="10" vspace="10"/>
       <button class="return" id="returnFromError"></button>
-    </div>
+    </div>-->
     <div id="root"></div>
-
     <script src="./data/rickandmorty/rickandmorty.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
-
   <!--  <script src="./data/rickandmorty/rickandmorty.json"></script>-->
-
   </body>
 </html>
