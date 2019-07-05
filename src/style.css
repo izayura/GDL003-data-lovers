@@ -13,8 +13,7 @@ body {
 }
 
 
-
-.loginPage, .option, .search, .seachByWord, .returnFromId, .return, .returnId{
+.loginPage, .option, .search, .seachByWord, .returnFromId, .return, .sort{
   margin: 5%;
   margin-bottom: 5%
   text-align: center;
@@ -52,7 +51,7 @@ IMG {
   margin: 1.7%;
   border-style: solid;
   font-weight: bold;
-  font-family: 'Tahoma';
+  font-family: 'Get Schwifty';
 }
 
 .return{
