@@ -41,7 +41,7 @@ showId.addEventListener("click", ()=>{
 
   filtered.forEach(cards=>{
 impress.innerHTML+=
-    `<div class="cardsFiltered" id= "">
+    `<div class="cardsFiltered" id= "cardPage" >
       <img src="${cards.image}" alt="" border="2.5">
       <h2>Name: ${cards.name}</h2>
       <p>Gender: ${cards.gender}</p>
@@ -78,7 +78,7 @@ buttonSort.addEventListener("click", ()=>{
   impress.innerHTML = "";
   order.forEach(cards=>{
     impress.innerHTML+=
-        `<div class="cardsFiltered" id= "">
+        `<div class="cardsFiltered" id= "cardPage">
           <img src="${cards.image}" alt="" border="2.5">
           <h2>Name: ${cards.name}</h2>
           <p>Gender: ${cards.gender}</p>
@@ -115,7 +115,7 @@ buttonSortZA.addEventListener("click", ()=>{
   impress.innerHTML = "";
   order.forEach(cards=>{
     impress.innerHTML+=
-        `<div class="cardsFiltered" id= "">
+        `<div class="cardsFiltered" id= "cardPage">
           <img src="${cards.image}" alt="" border="2.5">
           <h2>Name: ${cards.name}</h2>
           <p>Gender: ${cards.gender}</p>
