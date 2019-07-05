@@ -5,8 +5,6 @@
     src: url('\get_schwifty__a_rick_and_morty_font_by_jonizaak_dajw4u8.ttf');
 }
 body {
-    background-image: url("https://thumbs.gfycat.com/FailingImmaterialAmericanavocet-size_restricted.gif");
-    width: 100%;
     text-align: center;
     display: block;
     height: 100%;
@@ -56,9 +54,6 @@ IMG {
   font-family: 'Get Schwifty';
 }
 
-#cardPage{
-  background-image: url("https://thumbs.gfycat.com/FailingImmaterialAmericanavocet-size_restricted.gif");
-}
 
 .return{
   background-image:url(https://i.ibb.co/YNGXyMg/boton.png);
