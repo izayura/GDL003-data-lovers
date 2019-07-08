@@ -17,29 +17,26 @@
 ## Resumen del proyecto
 
 En este proyecto construimos una _página web_ para visualizar un
-_conjunto (set) de datos que se adecúe a lo que nuestro usuario definido
+ conjunto (set) de datos que se adecúe a lo que nuestro usuario definido
 necesita.
 
-A continuación se encuentra la fuente de nuestros datos, que provienen de la serie Rick and Morty:
+Durante este ejercicio se pusieron en práctica los conocimientos vistos sobre arrays y objetos, además de lo ya implementado anteriormente. También se crearon los tests y todo el desarrollo está planteado pensando en un usuario en específico.
+
+En la siguiente liga se encuentra la fuente de nuestros datos, que provienen de la serie Rick and Morty y nos fue facilitada por el equipo Laboratoria:
 
 - [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
   Este set nos proporciona la lista de los personajes de la serie Rick and
   Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com).
 
-
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún cálculo agregado**. Como aclaración,
-con cálculo agregado nos referimos a distintos cálculos que puedes hacer con
-la data que tienes para mostrar información aún más relevante a los usuarios.
-Una opción serían cálculos estadísticos como el promedio, el máximo o el mínimo,
-por ejemplo, si tenemos una colección que representa a un grupo de personas,
-y cada persona está representada como un _objeto_ con una _propiedad_ `altura`,
-podríamos elegir calcular la altura promedio en el grupo entre otras cosas.
+Nuestro producto a ofrecer para este segundo sprint se compone de una página web que permite manejar nuestra data de las siguientes formas:
+- Visualizar la información.
+- Aplicar filtros de búsqueda.
+- Ordenar la información filtrada.
 
 ## Consideraciones generales
 
 - El proyecto ha sido entregado subiendo el código a GitHub (commit/push) y la
-  interfaz se despliega usando [GitHub Pages](https://pages.github.com/).
+  interfaz se despliega usando [GitHub Pages](https://pages.github.com/). Donde un miembro del equipo funge como origin y otro como master, de manera que las actualizaciones deben unirse en común acuerdo.
 
 
 - Este proyecto se desarrolló en una dupla formada por Gloria Ramírez Robles y Tegthyn Coral Quiñones Gutiérrez como el segundo proyecto del bootcamp de Laboratoria Guadalajara tercera generación, el cual se titula _Data Lovers_.
@@ -51,9 +48,9 @@ El objetivo principal de este proyecto es aprender a diseñar y construir una
 interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
 usuario necesita.
 
-De manera puntual a continuación se presenta cada uno de los temas aprendidos en este ejercicio:
+De manera puntual a continuación se presenta cada uno de los temas desarrollados en este ejercicio:
 
-- Aplicar y profundizar todo lo que aprendiste en el proyecto anterior.
+- Aplicar y profundizar todo lo aprendido en el proyecto anterior.
 - Pensar en las **necesidades de los usuarios** para crear historias de usuario.
 - Escribir y trabajar con **historias de usuario**, sus definiciones de
   terminado (_definition of done_) en la organización y planificación de nuestro
@@ -79,13 +76,17 @@ Los criterios para considerar que el proyecto desarrollado está completo son:
 
 Este ejercicio de Web app está diseñado para que el usuario Rick Sánchez tenga acceso a la información básica de todos los seres del multiverso en que se desarrolla la serie.
 
-La presente Web app provee esta información ordenada en base a los filtros seleccionados (Gender y status) a partir de la cual se muestran los datos ordenados en tarjetas de identificación, las cuales a su vez pueden ser ordenadas alfabéticamente de manera ascendente y descendente.
+Nuestra página provee esta información ordenada en base a los filtros seleccionados (gender y status), a partir de ellos se muestran los datos ordenados en tarjetas de identificación, las cuales a su vez pueden ser ordenadas alfabéticamente de manera ascendente y descendente.
 
 En conclusión, este proyecto cubre la función de monitoreo de los personajes, donde elegimos mostrar; nombre, género, status y su ubicación actual.Considerando esta información Rick podrá continuar con sus investigaciones evadiendo la justicia y a quienes lo persiguen.
 
-Los criterios de diseño están basados en la estética visual propia de la serie, para favorecer el hecho de que pueda verse como si fuera una Web app que usa Rick dentro de la serie para agendar sus planes, a manera de metahistoria. De forma general tratamos de apegarnos a los colores saturados, elementos delineados en negro y un  poco de volumen a algunos objetos como los botones.
+Al ser nuestro usuario un personaje ficitio, los criterios de diseño están basados en la estética visual propia de la serie, para favorecer el hecho de que pueda verse como si fuera un dispositivo que usa Rick dentro de la serie para agendar sus planes, a manera de metahistoria. De forma general tratamos de apegarnos a los colores saturados, elementos delineados en negro y aportando un poco de volumen a algunos objetos como los botones.
 
 ### Historias de usuario
+
+![alt text](https://www.radiodemente.cl/radiodemente/wp-content/uploads/2018/07/AMORTY1.jpg)
+
+![alt text](https://i.ytimg.com/vi/3L3IqctvcCk/maxresdefault.jpg)
 
 #### Historia de usuario 1
 Yo, Rick Sánchez de la Tierra C-137 (https://es.wikipedia.org/wiki/Rick_S%C3%A1nchez_(personaje)) quiero una base de datos de los seres con los que he interactuado.
@@ -145,7 +146,7 @@ Estos son los dibujos en los que basamos el diseño que teniamos pensado para la
 
 Teniendo ya claro el estilo y las páginas que queriamos utilizar en nuestra web app, buscamos una imagen que se adaptará al aparato que buscamos simular, y con ayuda de editores de gráficos(gimp y photoshop) la limpiamos de detalles externos(fondo, manos, borrar lo que ya aparecía en la pantalla del mismo), y agregamos el diseño que buscabamos tuviera en nuestro proyecto. 
 
-Para elaborar el prototipo de alta fidelidad fueron muy útiles nuestros conocimientos previos sobre editores de imagen, comenzamos por dividirnos los div que conformaban el prototipo y trabajamos a la par cada quien en el editor de su elección, usamos Photoshop y Gimp. Una vez que tuvimos nuestas imágenes listas para cada pantalla se dio la interacción con botones en Marvel donde creamos un prototipo de alta fidelidad con botones funcionales para recorrer la interfaz de la web app.
+Para elaborar el prototipo de alta fidelidad fueron muy útiles nuestros conocimientos previos sobre editores de imagen, comenzamos por dividirnos los div que conformaban el prototipo y trabajamos a la par cada quien en el editor de su elección. Una vez que tuvimos nuestas imágenes listas para cada pantalla se dio la interacción con botones en Marvel donde creamos un prototipo de alta fidelidad con botones funcionales para recorrer la interfaz de la web app.
 
 ## https://marvelapp.com/541bc74
 
@@ -163,30 +164,18 @@ mejoraste en tu propuesta final.
 
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-Como mencionamos, **no** es necesario que construyas la interfaz tal como la
-diseñaste. Tendrás un tiempo limitado para hackear, así es que deberás
-priorizar.
+Hasta ahora nuesta interfaz permite:
 
-Como mínimo, tu implementación debe:
+1. Mostrar la data en una interfaz en forma de tarjetas de identificación.
+2. Filtrar y ordenar la data según las necesidades del usuario.
 
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
-2. Permitir al usuario filtrar y ordenar la data.
-3. Calcular estadísticas de la colección (o subcolección) como media aritmética,
-   máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece
-   un determinado valor, por ejemplo.
-4. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
-   tablets y desktops.
-
-Es importante que tu interfaz, a pesar de ser una versión mínima de tu ideal,
-siga los fundamentos de _visual design_.
 
 ### Pruebas unitarias
 
-El _boilerplate_ de este proyecto no incluye pruebas unitarias, pero esperamos
-que escribas tus propias pruebas unitarias para las funciones encargadas de
+El _boilerplate_ de este proyecto no incluía pruebas unitarias, por lo que se desarrollaron a la par de la funcionalidad. Fueron planteadas para
 _procesar_, _filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-Para ello te recomendamos implementar las siguientes funciones en el archivo
+
+Las pruebas se ejecutarán sobre las siguientes funciones de nuestro archivo javascript
 `src/data.js`:
 
 - `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
@@ -204,7 +193,6 @@ Para ello te recomendamos implementar las siguientes funciones en el archivo
   cálculos estadísticos básicos para ser mostrados de acuerdo a la data
   proporcionada.
 
-Estas son propuestas de funciones que podrías implementar.
 
 El archivo `src/data.js` debe tener una cobertura del 70% de _statements_
 (_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
@@ -230,7 +218,7 @@ Features/características extra sugeridas:
 
 ## Consideraciones técnicas
 
-La lógica del proyecto debe estar implementada completamente en JavaScript
+La lógica del proyecto está implementada completamente en JavaScript
 (ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
 frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
 con la excepción de librerías para hacer gráficas (charts); ver
@@ -274,39 +262,16 @@ como toda la configuración de dependencias:
 
 ### `src/index.html`
 
-Al igual que en el proyecto anterior, existe un archivo `index.html`. Como ya
-sabrás, acá va la página que se mostrará al usuario. También nos sirve para
-indicar qué scripts se usarán y unir todo lo que hemos hecho.
+Existe un archivo `index.html` que es propiamente la página que se mostrará al usuario. También nos sirve para
+indicar qué scripts se usarán y vincular otro tipo de archivos que aportan diseño y funcionalidad a la página.
 
-En este archivo encontrarás una serie de _etiquetas_ (_tags_) `<script>`
-_comentadas_. Para _cargar_ las diferentes fuentes de datos tendrás que
-_descomentar_ estas _etiquetas_. Cada uno de estos scripts asignará una variable
-global con la data correspondiente a esa fuente de datos.
-
-Por ejemplo, si descomentamos la siguiente línea:
-
-```html
-<!-- <script src="./data/worldbank/worldbank.js"></script> -->
-```
-
-La línea quedaría así:
-
-```html
-<script src="./data/worldbank/worldbank.js"></script>
-```
-
-Y ahora tendríamos la variable global `WORLDBANK` disponible en nuestros otros
-scripts (como `src/data.js` o `src/main.js`).
 
 ### `src/main.js`
 
-Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
-mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
+El archivo `src/main.js` contiene lo relatico a mostrar los datos en la pantalla, es decir, a la
 interacción con el DOM. Operaciones como creación de nodos, registro de
 manejadores de eventos (_event listeners_ o _event handlers_), ....
 
-Esta no es la única forma de dividir tu código, puedes usar más archivos y
-carpetas, siempre y cuando la estructura sea clara para tus compañeras.
 
 ### `src/data.js`
 
@@ -314,7 +279,7 @@ El corazón de este proyecto es la manipulación de datos a través de arreglos 
 objetos. La idea de este archivo es contener toda la funcionalidad
 que corresponda a obtener, procesar y manipular datos.
 
-En este archivo esperamos que implementes las funciones detalladas en la sección
+En este archivo se incluyen las funciones detalladas en la sección
 de [_Pruebas Unitarias_](#pruebas-unitarias).
 
 ### `src/data`
@@ -329,9 +294,9 @@ asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_A
 
 ### `test/data.spec.js`
 
-Tendrás también que completar las pruebas unitarias de las funciones
-implementadas en el archivo `data.js`.
 
+Contiene las pruebas unitarias desarrolladas durante el proyecto para las funciones
+implementadas en el archivo `data.js`.
 
 ---
 
