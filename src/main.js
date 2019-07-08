@@ -12,25 +12,16 @@ enterButton.addEventListener("click", ()=>{
   document.getElementById("login").style.display="none";
   document.getElementById("applyFilters").style.display="block";
   document.getElementById("idPage").style.display="none";
-  //document.getElementById("showStats").style.display="none";
   condition.value="0";
   conditionGender.value="0";
 });
-
-/*let goStats=document.getElementById("goStats");
-goStats.addEventListener("click", ()=>{
-  document.getElementById("login").style.display="none";
-  document.getElementById("applyFilters").style.display="none";
-  document.getElementById("idPage").style.display="none";
-  document.getElementById("showStats").style.display="block";
-});*/
 
 let showId=document.getElementById("goIds");
 showId.addEventListener("click", ()=>{
   document.getElementById("login").style.display="none";
   document.getElementById("applyFilters").style.display="none";
   document.getElementById("idPage").style.display="block";
-  //document.getElementById("error").style.display="none";
+
   let filtered=window.dataLovers.filterData(RICKANDMORTY.results, condition.value, conditionGender.value);
   //convierte la variable filter de string a objeto JSON
   filtered=JSON.parse(filtered);

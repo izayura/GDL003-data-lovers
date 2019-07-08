@@ -1,150 +1,111 @@
 @media(orientation:landscape){
 
 @font-face {
-    font-family: "Get Schwifty";
-    src: url('\get_schwifty__a_rick_and_morty_font_by_jonizaak_dajw4u8.ttf');
-}
-body {
-    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/93853995680225960/7B23152D636B4F3F4AC4C774454242CA8932781B/");
-    width: 100%;
-    text-align: center;
-    display: block;
-    height: 100%;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  font-family: "Get Schwifty";
+  src: url('\get_schwifty__a_rick_and_morty_font_by_jonizaak_dajw4u8.ttf');
+  }
 
-}
-div.page1{
+body {
+  background-attachment: fixed;
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/93853995680225960/7B23152D636B4F3F4AC4C774454242CA8932781B/");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   display: block;
-  background-image: url("https://i.ibb.co/MPpNBBj/pantalla-con-lineas-corregida.png");
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  }
+
+div.page1{
   background-color: transparent;
   background-image: center;
+  background-image: url("https://i.ibb.co/MPpNBBj/pantalla-con-lineas-corregida.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border:0;
+  display: block;
+  height: 100%;
   outline: none;
   width: 100%;
-  height: 100%;
-  background-size: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+  }
 
 .loginPage, .loginPageUser, .loginPageEnter, .option, .search, .seachByWord, .returnFromId, .return, .sort{
-  margin: 2%;
-  margin-bottom: 2%;
-  padding-bottom: 12;
   background-color: rgb(39, 173, 43);
-  text-align: center;
-  font-weight: bold;
+  box-shadow: -3px 7px 3px 12px #000000;
+  border-color: black;
+  border-radius: 7px;
+  border-style: solid;
+  color: rgb(39, 173, 43);
   font-family: 'Tahoma';
   font-size: larger;
-  -webkit-text-fill-color: rgb(35, 116, 38);
-  border-style: solid;
-  border-radius: 7px;
-  color: rgb(39, 173, 43);
-  border-color: black;
+  font-weight: bold;
+  margin: 2%;
+  margin-bottom: 2%;
+  padding: 6px;
+  padding-bottom: 12;
+  text-align: center;
   text-shadow:
   -1px -1px 0 #000,
   1px -1px 0 #000,
   -1px 1px 0 #000,
   1px 1px 0 #000;
-  color: rgb(39, 173, 43);
-  -webkit-box-shadow: -3px 7px 3px 12px #000000;
-  box-shadow: -3px 7px 3px 12px #000000;
-  padding: 6px;
-}
+  -webkit-text-fill-color: rgb(35, 116, 38);
+  }
 
 .loginPageUser{
   margin-top: 10%;
-}
+  }
 
 .loginPageEnter{
   margin-bottom: 10%;
-}
+  }
 
 .loginPageImg{
-  width: 190px; height: 170px;
-  -webkit-box-shadow: -3px 7px 0px 12px #000000;
   box-shadow: -3px 7px 0px 12px #000000;
-
-}
-
-/*.option, .search, .seachByWord, .returnFromId, .return, .sort{
-  margin: 5%;
-  margin-bottom: 5%
-  align-items: center;
-  background-color: rgb(22, 145, 138);
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Tahoma';
-  font-size: medium;
-  border-style: solid;
-  border-radius: 7px;
-  color: rgb(39, 173, 43);
-  text-decoration-color: rgb(39, 173, 43);
-  border-color: black;
-  text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
-  color: rgb(39, 173, 43);
-}*/
+  width: 190px; height: 170px;
+  }
 
 IMG {
-  width:100px;
   height:75px;
   margin:10px 10px 10px 10px;
-}
+  width:100px;
+  }
 
 .cardsFiltered{
-  width:175px;
+  background-color: #89F790;
+  border-color: black;
+  border-radius: 7px;
+  border-style: solid;
+  box-shadow: -3px 7px 3px 12px #000000;
   height: 400px;
   float:left;
   font-family: Impact ;
+  font-size: larger;
+  font-weight: bold;
   margin: 2%;
   margin-bottom: 2%;
-  padding-bottom: 12;
-  background-color: #89F790;
-  text-align: center;
-  font-weight: bold;
-  font-size: larger;
-  -webkit-text-fill-color: #0287A8;
-    border-color: black;
-  border-style: solid;
-  border-radius: 7px;
-  text-shadow: 2px 2px 1px black;
-  -webkit-box-shadow: -3px 7px 3px 12px #000000;
-  box-shadow: -3px 7px 3px 12px #000000;
   padding: 6px;
-}
+  padding-bottom: 12;
+  text-align: center;
+  text-shadow: 2px 2px 1px black;
+  -webkit-text-fill-color: #0287A8;
+  width:175px;
+  }
+
 .cardsFiltered:hover{
-background-color: #09F701;
+  background-color: #09F701;
   text-shadow: 2px 2px 1px white;
-}
+  }
 
 .return{
+  background-color: black;
   background-image:url(https://i.ibb.co/YNGXyMg/boton.png);
   background-repeat:no-repeat;
+  border-radius: 48px;
   height:100px;
   width:100px;
-  border-radius: 48px;
-}
+  }
 
-.showStats{
-  background-image:url(https://i.ibb.co/Gn04PDR/mrmeeseks-STATS.png);
-  background-repeat:no-repeat;
-  background-color: transparent;
-  height:400px;
-  width:271px;
-  border-style:
-}
-
-.picklerick{
-  text-align: left;
-  margin:10px 10px 10px 10px;
-}
 }
