@@ -27,7 +27,7 @@ describe('dataLovers.sortData', () => {
   it('is a function', () => {
     expect(typeof dataLovers.sortData).toBe('function');
   });
-  
+
   it('returns `sortedData`', () => {
     expect(dataLovers.sortData(RICKANDMORTY, name)).toBe("sortedData");
   });

@@ -1,6 +1,7 @@
 document.getElementById("login").style.display="block";
 document.getElementById("idPage").style.display="none";
 document.getElementById("applyFilters").style.display="none";
+document.getElementById("showStats").style.display="none";
 document.getElementById("user").value="";
 
 let condition=document.getElementById("status");
@@ -109,6 +110,14 @@ buttonSortZA.addEventListener("click", ()=>{
       });
 });
 
+let goStats=document.getElementById("goStats");
+goStats.addEventListener("click", ()=>{
+  document.getElementById("login").style.display="none";
+  document.getElementById("applyFilters").style.display="none";
+  document.getElementById("idPage").style.display="none";
+  document.getElementById("showStats").style.display="block";
+});
+
 /*let error=document.getElementById("error");
 error.addEventListener("click", ()=>{
   document.getElementById("login").style.display="none";
@@ -130,8 +139,8 @@ const returnButton =()=>{
   impress.innerHTML=" ";
 };
 
-/*let returnStats=document.getElementById("returnFromStats");
-returnStats.addEventListener("click", returnButton);*/
+let returnStats=document.getElementById("returnFromStats");
+returnStats.addEventListener("click", returnButton);
 
 let returnId=document.getElementById("returnFromId");
 returnId.addEventListener("click", returnButton);
