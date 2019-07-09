@@ -130,7 +130,7 @@ error.addEventListener("click", ()=>{
 
 const returnButton =()=>{
   document.getElementById("login").style.display="none";
-  //document.getElementById("showStats").style.display="none";
+  document.getElementById("showStats").style.display="none";
   document.getElementById("idPage").style.display="none";
 //  document.getElementById("error").style.display="none";
   document.getElementById("applyFilters").style.display="block";
